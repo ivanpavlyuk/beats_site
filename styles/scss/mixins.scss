@@ -3,8 +3,7 @@
   font-size: 48px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0px;
-  text-align: left;
+  text-transform: uppercase;
 }
 
 @mixin headline2 {
@@ -12,8 +11,6 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
-  letter-spacing: 0px;
-  text-align: left;
 }
 
 @mixin headline3 {
@@ -21,8 +18,6 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  letter-spacing: 0px;
-  text-align: left;
 }
 
 @mixin body2bold {
@@ -30,8 +25,6 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
-  letter-spacing: 0px;
-  text-align: left;
 }
 
 @mixin body2semibold {
@@ -39,8 +32,6 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
 }
 
 @mixin body2regular {
@@ -48,8 +39,6 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  letter-spacing: 0px;
-  text-align: left;
 }
 
 @mixin body1semibold {
@@ -57,8 +46,6 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
 }
 
 @mixin body1regular {
@@ -66,8 +53,6 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
 }
 
 @mixin body1light {
@@ -75,6 +60,4 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  letter-spacing: 0px;
-  text-align: left;
 }
