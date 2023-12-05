@@ -1,0 +1,80 @@
+@mixin headline1 {
+  font-family: Play;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin headline2 {
+  font-family: Play;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin headline3 {
+  font-family: Play;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin body2bold {
+  font-family: Play;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin body2semibold {
+  font-family: Play;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin body2regular {
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin body1semibold {
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin body1regular {
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin body1light {
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+}

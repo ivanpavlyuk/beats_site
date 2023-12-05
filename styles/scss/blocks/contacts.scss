@@ -1,0 +1,20 @@
+.contacts {
+  font-family: Play;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.contacts__phone {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__phone::before {
+  content: "";
+  display: inline-block;
+  margin-right: 2px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../../../img/icons/phone.svg);
+  background-size: contain;
+}

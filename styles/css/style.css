@@ -324,11 +324,23 @@ body {
   letter-spacing: 0px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,15 +354,102 @@ li {
           justify-content: space-between;
 }
 
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.header {
+  color: #292929;
+  padding-top: 24px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  margin-right: 38px;
+}
+
+.header__contacts {
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+.header__title {
+  text-transform: uppercase;
+}
+
 .logo {
   width: 40px;
   height: 40px;
+}
+
+.logo__img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .nav {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 18px;
   line-height: 1.66;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.nav__item:not(.nav__item:last-of-type) {
+  margin-right: 27px;
+}
+
+.contacts {
+  font-family: Play;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.contacts__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__phone::before {
+  content: "";
+  display: inline-block;
+  margin-right: 2px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../../../img/icons/phone.svg);
+  background-size: contain;
+}
+
+.title_size_biggest {
+  font-family: Play;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 .main {

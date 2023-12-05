@@ -3,3 +3,12 @@
   font-size: 18px;
   line-height: 1.66;
 }
+
+.nav__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav__item:not(.nav__item:last-of-type) {
+  margin-right: 27px;
+}

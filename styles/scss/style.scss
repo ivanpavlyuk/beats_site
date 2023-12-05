@@ -2,10 +2,15 @@
 
 @import "normalize.scss";
 @import "base.scss";
+@import "variables.scss";
+@import "mixins.scss";
 @import "../scss/blocks/wrapper.scss";
+@import "../scss/blocks/container.scss";
 @import "../scss/blocks/header.scss";
 @import "../scss/blocks/logo.scss";
 @import "../scss/blocks/nav.scss";
+@import "../scss/blocks/contacts.scss";
+@import "../scss/blocks/title.scss";
 @import "../scss/blocks/paginator.scss";
 @import "../scss/blocks/button.scss";
 @import "../scss/blocks/hero.scss";

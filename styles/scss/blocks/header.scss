@@ -1,2 +1,23 @@
 .header {
+  color: $black;
+  padding-top: 24px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 38px;
+}
+
+.header__contacts {
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+.header__title {
+  text-transform: uppercase;
 }
