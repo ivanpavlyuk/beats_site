@@ -1,118 +1,26 @@
 .header {
-  position: relative;
   color: $black;
   padding-top: 24px;
   background-color: #f5f5f5;
-  padding-bottom: 52px;
-}
 
-.header__menu {
-  display: flex;
-  justify-content: start;
-  align-items: baseline;
-  margin-bottom: 46px;
-}
+  &__container {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    margin-bottom: 46px;
+  }
 
-.header__logo {
-  margin-right: 38px;
-  align-self: start;
-}
+  &__logo {
+    margin-right: 38px;
+    align-self: start;
+  }
 
-.header__nav {
-  margin-top: 8px;
-}
+  &__nav {
+    margin-top: 8px;
+  }
 
-.header__contacts {
-  margin-right: 25px;
-  margin-left: auto;
-}
-
-.header__hero {
-  display: flex;
-}
-
-.header__title {
-  margin-top: 47px;
-  margin-bottom: 22px;
-  max-width: 400px;
-}
-
-.header__text {
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 21px;
-  line-height: 1.2;
-  margin-bottom: 36px;
-  max-width: 332px;
-}
-
-.header__button {
-  margin-bottom: 70px;
-}
-
-.header__list {
-  display: flex;
-  justify-content: start;
-  align-items: baseline;
-  column-gap: 11px;
-}
-
-.header__item {
-  max-width: 166px;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  line-height: 1.1;
-}
-
-.header__item::before {
-  content: "";
-  width: 43px;
-  height: 41px;
-  margin-right: 13px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.header__item:first-of-type::before {
-  background-image: url(../../../img/icons/noise\ 1.svg);
-  background-size: 103%;
-}
-.header__item:nth-of-type(2)::before {
-  background-image: url(../../../img/icons/charging\ 1.svg);
-  background-size: 113%;
-  margin-right: 17px;
-}
-.header__item:nth-of-type(3)::before {
-  background-image: url(../../../img/icons/plug\ 1.svg);
-  background-size: 120%;
-  margin-right: 17px;
-}
-
-.header__img-container {
-  display: flex;
-  align-items: center;
-  max-width: 489px;
-  border-radius: 50%;
-  margin-left: -85px;
-}
-
-.header__img {
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.header__paginator {
-  margin-top: -42px;
-  margin-left: 35px;
-}
-
-.header:after {
-  content: "";
-  position: absolute;
-  width: 45px;
-  height: 10px;
-  transform: rotate(-45deg);
-  background-color: #c4c4c4;
-  bottom: -5px;
-  right: 11%;
+  &__contacts {
+    margin-right: 25px;
+    margin-left: auto;
+  }
 }

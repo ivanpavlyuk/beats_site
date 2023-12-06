@@ -1,0 +1,23 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="60" height="60" fill="#313131"/>
+<g id="1100" clip-path="url(#clip0_0_1)">
+<rect width="1100" height="5944" transform="translate(-188 -957)" fill="white"/>
+<g id="Features">
+<g id="features">
+<path id="&#208;&#173;&#208;&#187;&#208;&#187;&#208;&#184;&#208;&#191;&#209;&#129; 2" fill-rule="evenodd" clip-rule="evenodd" d="M30.4998 -32.0019C65.0177 -32.0019 92.9998 -4.01997 92.9998 30.498C92.9998 65.015 65.0177 92.9971 30.4998 92.9971C-4.01792 92.9971 -32.0001 65.015 -32.0001 30.498C-32.0001 -4.01997 -4.01792 -32.0019 30.4998 -32.0019Z" fill="#F2F5F4"/>
+<g id="feat-1">
+<g id="battery 1">
+<path id="Vector" d="M42.536 4H36V0H24V4H17.464C15.554 4 14 5.554 14 7.464V56.536C14 58.446 15.554 60 17.464 60H42.536C44.446 60 46 58.446 46 56.536V7.464C46 5.554 44.446 4 42.536 4ZM16 19H44V31H16V19ZM16 33H44V45H16V33ZM26 2H34V4H26V2ZM17.464 6H24H36H42.536C43.344 6 44 6.656 44 7.464V17H16V7.464C16 6.656 16.656 6 17.464 6ZM42.536 58H17.464C16.656 58 16 57.344 16 56.536V47H44V56.536C44 57.344 43.344 58 42.536 58Z" fill="black"/>
+</g>
+</g>
+</g>
+</g>
+<g id="design">
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1100" height="5944" fill="white" transform="translate(-188 -957)"/>
+</clipPath>
+</defs>
+</svg>

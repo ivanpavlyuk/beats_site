@@ -1,0 +1,24 @@
+.model {
+  display: flex;
+  align-items: start;
+  padding-top: 66px;
+  padding-bottom: 94px;
+  padding-left: 107px;
+  padding-right: 60px;
+  gap: 59px;
+
+  &__img-container {
+    margin-top: 30px;
+    max-width: 452px;
+    max-height: 452px;
+  }
+
+  &__img {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__properties {
+    margin-bottom: 25px;
+  }
+}

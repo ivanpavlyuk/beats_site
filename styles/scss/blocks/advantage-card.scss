@@ -1,0 +1,30 @@
+.advantage-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  &__img-container {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    background-color: #f2f5f4;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__title {
+    @include headline3;
+    margin-bottom: 7px;
+    text-align: center;
+  }
+
+  &__text {
+    @include body1light;
+    color: $grey;
+    max-width: 247px;
+    text-align: center;
+  }
+}

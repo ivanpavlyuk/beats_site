@@ -1,0 +1,46 @@
+.properties {
+  position: relative;
+  width: 364px;
+  @include body1semibold;
+  color: #000;
+  &__button {
+    width: 91px;
+    height: 91px;
+    background-color: #9a9a9a;
+    background-image: url(/img/icons/gear\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 46%;
+    border-radius: 4px;
+    border: none;
+  }
+  &__list {
+    width: calc(100% - 91px);
+    padding: 18px 13px 24px 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffffcc;
+    box-shadow: 4px 4px 40px 0px #0000000f;
+  }
+  &__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 0;
+
+    &::before {
+      content: "";
+      width: 32px;
+      height: 32px;
+      margin-right: 16px;
+      background-image: url(/img/icons/bluetooth\ 1.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+  }
+  &__value {
+    margin-left: auto;
+  }
+}

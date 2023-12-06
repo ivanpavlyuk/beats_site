@@ -1,0 +1,30 @@
+.models {
+  background-color: #f8faf9;
+  position: relative;
+
+  &__button {
+    position: absolute;
+
+    &_left {
+      top: calc(50% - 20px);
+      left: 55px;
+    }
+
+    &_right {
+      top: calc(50% - 19px);
+      right: 55px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 4%;
+    transform: rotate(226deg);
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 17px solid transparent;
+    border-bottom: 34px solid $red;
+  }
+}

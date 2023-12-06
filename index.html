@@ -9,7 +9,7 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container header__menu">
+        <div class="container header__container">
           <div class="logo header__logo">
             <img class="logo__img" src="img/logo.svg" alt="Логотип Beats" />
           </div>
@@ -44,42 +44,50 @@
             >
           </div>
         </div>
-        <div class="container header__hero">
-          <div class="header__description">
-            <h1 class="title title_size_biggest header__title">
-              Беспроводные наушники Beats Solo 3
-            </h1>
-            <p class="header__text">
-              Встречайте новую версию наушников из линейки Powerbeats.
-            </p>
-            <a class="button button_bg_red header__button" href="#">Заказать</a>
-            <ul class="header__list">
-              <li class="header__item">Безупречный звук</li>
-              <li class="header__item">До 40 часов работы</li>
-              <li class="header__item">Технология Fast Fuel</li>
-            </ul>
-          </div>
-          <div class="header__img-container">
-            <img
-              class="header__img"
-              src="img/headphones_big.jpg"
-              alt="Beats Solo 3 белые"
-            />
-            <ol class="paginator header__paginator">
-              <li class="paginator__item paginator__item_active"></li>
-              <li class="paginator__item"></li>
-              <li class="paginator__item"></li>
-              <li class="paginator__item"></li>
-              <li class="paginator__item"></li>
-              <li class="paginator__item"></li>
-              <li class="paginator__item"></li>
-              <li class="paginator__item"></li>
-              <li class="paginator__item"></li>
-            </ol>
-          </div>
-        </div>
       </header>
       <main class="main">
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="hero__description">
+              <h1 class="title title_size_biggest hero__title">
+                Беспроводные наушники Beats Solo 3
+              </h1>
+              <p class="hero__text">
+                Встречайте новую версию наушников из линейки Powerbeats.
+              </p>
+              <a class="button button_bg_red hero__button" href="#">Заказать</a>
+              <ul class="hero__list">
+                <li class="hero__item">
+                  <span class="hero__item-text">Безупречный звук</span>
+                </li>
+                <li class="hero__item">
+                  <span class="hero__item-text">До 40 часов работы</span>
+                </li>
+                <li class="hero__item">
+                  <span class="hero__item-text">Технология Fast Fuel</span>
+                </li>
+              </ul>
+            </div>
+            <div class="img-container hero__img-container">
+              <img
+                class="hero__img"
+                src="img/headphones_big.jpg"
+                alt="Beats Solo 3 цвет серебро"
+              />
+              <ol class="paginator hero__paginator">
+                <li class="paginator__item paginator__item_active"></li>
+                <li class="paginator__item"></li>
+                <li class="paginator__item"></li>
+                <li class="paginator__item"></li>
+                <li class="paginator__item"></li>
+                <li class="paginator__item"></li>
+                <li class="paginator__item"></li>
+                <li class="paginator__item"></li>
+                <li class="paginator__item"></li>
+              </ol>
+            </div>
+          </div>
+        </section>
         <section class="advantages">
           <div class="container advantages__container">
             <h2 class="title title_size_biggest advantages__title">
@@ -90,16 +98,22 @@
               подключать наушники к различным устройствам Apple.
             </p>
             <ul class="advantages__list">
-              <li class="advantage-card advanatages__item">
-                <div class="advantage-card__img-container"></div>
+              <li class="advantage-card advantages__item">
+                <div
+                  class="advantage-card__img-container"
+                  style="background-image: url(/img/icons/features_1.svg)"
+                ></div>
                 <h3 class="advantage-card__title">40 часов работы</h3>
                 <p class="advantage-card__text">
                   Наушники Beats Solo3 могут работать до 40 часов без
                   подзарядки, чтобы вы могли пользоваться ими каждый день.
                 </p>
               </li>
-              <li class="advantage-card advanatages__item">
-                <div class="advantage-card__img-container"></div>
+              <li class="advantage-card advantages__item">
+                <div
+                  class="advantage-card__img-container"
+                  style="background-image: url(/img/icons/features_2.svg)"
+                ></div>
                 <h3 class="advantage-card__title">Фирменное звучание</h3>
                 <p class="advantage-card__text">
                   Фирменное звучание Beats в наушниках с технологией Bluetooth
@@ -107,8 +121,11 @@
                   отправились.
                 </p>
               </li>
-              <li class="advantage-card advanatages__item">
-                <div class="advantage-card__img-container"></div>
+              <li class="advantage-card advantages__item">
+                <div
+                  class="advantage-card__img-container"
+                  style="background-image: url(/img/icons/features_3.svg)"
+                ></div>
                 <h3 class="advantage-card__title">Быстрая зарядка</h3>
                 <p class="advantage-card__text">
                   Благодаря технологии Fast Fuel всего через 5 минут зарядки вы
@@ -117,6 +134,83 @@
               </li>
             </ul>
           </div>
+        </section>
+        <section class="models">
+          <h2 class="visually-hidden">Модели Beats Solo 3</h2>
+          <button
+            class="slider-button models__button models__button_left"
+            style="background-image: url(/img/icons/left.svg)"
+          >
+            <span class="visually-hidden">Предыдущая модель</span>
+          </button>
+          <button
+            class="slider-button models__button models__button_right"
+            style="background-image: url(/img/icons/right.svg)"
+          >
+            <span class="visually-hidden">Следующая модель</span>
+          </button>
+          <article class="model models__item models__item-active">
+            <div class="img-container model__img-container">
+              <img
+                class="model__img"
+                src="img/headphones_big_2.jpg"
+                alt="Beats Solo 3 цвет серебро"
+              />
+            </div>
+            <div class="model__info">
+              <div class="properties model__properties">
+                <button class="properties__button">
+                  <span class="visually-hidden">Характеристики</span>
+                </button>
+                <dl class="properties__list paginator__list_active">
+                  <div class="properties__item">
+                    <dt class="properties__name">Bluetooth</dt>
+                    <dd class="properties__value">4.0</dd>
+                  </div>
+                  <div class="properties__item">
+                    <dt class="properties__name">Дальность</dt>
+                    <dd class="properties__value">12 м</dd>
+                  </div>
+                  <div class="properties__item">
+                    <dt class="properties__name">Зарядка</dt>
+                    <dd class="properties__value">3 ч</dd>
+                  </div>
+                  <div class="properties__item">
+                    <dt class="properties__name">Вес</dt>
+                    <dd class="properties__value">215гр</dd>
+                  </div>
+                  <div class="properties__item">
+                    <dt class="properties__name">Гарантия</dt>
+                    <dd class="properties__value">1 год</dd>
+                  </div>
+                </dl>
+              </div>
+              <h3 class="title title_size_big model__title">
+                Beats solo 3. цвет «атласное серебро»
+              </h3>
+              <div class="model__text">
+                Беспроводные наушники Beats Solo3 готовы к работе в любой
+                момент. Включите их и поднесите к своему iPhone — они мгновенно
+                подключатся к нему.
+              </div>
+              <dl class="model__details-list">
+                <div class="model__details-item">
+                  <dt class="model__details-name">Зарядка</dt>
+                  <dd class="model__details-value"><b>2 часа</b></dd>
+                </div>
+                <div class="model__details-item">
+                  <dt class="model__details-name">Вес</dt>
+                  <dd class="model__details-value"><b>215 грамм</b></dd>
+                </div>
+              </dl>
+              <div class="model__order">
+                <b class="model__price">14 990 ₽</b>
+                <a class="button button_bg_red model__button" href="#"
+                  >Заказать</a
+                >
+              </div>
+            </div>
+          </article>
         </section>
       </main>
       <footer class="footer"></footer>
