@@ -15,14 +15,20 @@
     border: none;
   }
   &__list {
+    display: none;
     width: calc(100% - 91px);
-    padding: 18px 13px 24px 14px;
+    padding: 18px 13px 24px 30px;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #ffffffcc;
+    background-color: #ffffffef;
     box-shadow: 4px 4px 40px 0px #0000000f;
+
+    &_active {
+      display: block;
+    }
   }
+
   &__item {
     display: flex;
     justify-content: start;
@@ -31,13 +37,27 @@
 
     &::before {
       content: "";
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
       margin-right: 16px;
-      background-image: url(/img/icons/bluetooth\ 1.svg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
+    }
+    &:nth-child(1)::before {
+      background-image: url(/img/icons/bluetooth\ 1.svg);
+    }
+    &:nth-child(2)::before {
+      background-image: url(/img/icons/road\ 1.svg);
+    }
+    &:nth-child(3)::before {
+      background-image: url(/img/icons/charger\ 1.svg);
+    }
+    &:nth-child(4)::before {
+      background-image: url(/img/icons/kg\ 1.svg);
+    }
+    &:nth-child(5)::before {
+      background-image: url(/img/icons/patent\ 1.svg);
     }
   }
   &__value {

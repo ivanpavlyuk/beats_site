@@ -1,0 +1,36 @@
+.team {
+  padding-top: 79px;
+  padding-bottom: 24px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: $black;
+    position: absolute;
+    top: -7px;
+    right: 7%;
+    transform: rotate(30deg);
+  }
+
+  &__container {
+    max-width: 942px;
+  }
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 53px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__item {
+    max-width: 220px;
+  }
+}
