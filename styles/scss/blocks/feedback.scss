@@ -1,0 +1,31 @@
+.feedback {
+  background-color: #f8faf9;
+  padding: 42px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+
+  &__img {
+    width: 253px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__title {
+    @include headline3;
+    margin-top: 32px;
+    margin-bottom: 27px;
+  }
+  &__text {
+    @include body2regular;
+    max-width: 500px;
+    color: $grey;
+    margin-bottom: 38px;
+  }
+  &__author {
+    @include body2bold;
+  }
+}
