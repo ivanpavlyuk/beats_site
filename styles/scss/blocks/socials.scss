@@ -1,0 +1,24 @@
+.socials {
+  display: flex;
+  column-gap: 10px;
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__item:nth-child(1) &__link {
+    background-image: url(/img/icons/vk.svg);
+  }
+  &__item:nth-child(2) &__link {
+    background-image: url(/img/icons/facebook.svg);
+  }
+  &__item:nth-child(3) &__link {
+    background-image: url(/img/icons/insta.svg);
+  }
+  &__item:nth-child(4) &__link {
+    background-image: url(/img/icons/telegram.svg);
+  }
+}

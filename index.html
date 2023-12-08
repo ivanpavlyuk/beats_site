@@ -16,25 +16,25 @@
           <div class="nav header__nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#">О нас</a>
+                <a class="nav__link" href="#about">О нас</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Наушники</a>
+                <a class="nav__link" href="#models">Наушники</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Команда</a>
+                <a class="nav__link" href="#team">Команда</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Цвета</a>
+                <a class="nav__link" href="#colors">Цвета</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Отзывы</a>
+                <a class="nav__link" href="#feedbacks">Отзывы</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Как мы работаем</a>
+                <a class="nav__link" href="#about">Как мы работаем</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Контакты</a>
+                <a class="nav__link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </div>
@@ -46,7 +46,7 @@
         </div>
       </header>
       <main class="main">
-        <section class="hero">
+        <section class="hero" id="hero">
           <div class="container hero__container">
             <div class="hero__description">
               <h1 class="title title_size_biggest hero__title">
@@ -75,20 +75,40 @@
                 alt="Beats Solo 3 цвет серебро"
               />
               <ol class="paginator hero__paginator">
-                <li class="paginator__item paginator__item_active"></li>
-                <li class="paginator__item"></li>
-                <li class="paginator__item"></li>
-                <li class="paginator__item"></li>
-                <li class="paginator__item"></li>
-                <li class="paginator__item"></li>
-                <li class="paginator__item"></li>
-                <li class="paginator__item"></li>
-                <li class="paginator__item"></li>
+                <li class="paginator__item paginator__item_active">
+                  <button
+                    class="paginator__button paginator__button_active"
+                  ></button>
+                </li>
+                <li class="paginator__item">
+                  <button class="paginator__button paginator__button"></button>
+                </li>
+                <li class="paginator__item">
+                  <button class="paginator__button paginator__button"></button>
+                </li>
+                <li class="paginator__item">
+                  <button class="paginator__button paginator__button"></button>
+                </li>
+                <li class="paginator__item">
+                  <button class="paginator__button paginator__button"></button>
+                </li>
+                <li class="paginator__item">
+                  <button class="paginator__button paginator__button"></button>
+                </li>
+                <li class="paginator__item">
+                  <button class="paginator__button paginator__button"></button>
+                </li>
+                <li class="paginator__item">
+                  <button class="paginator__button paginator__button"></button>
+                </li>
+                <li class="paginator__item">
+                  <button class="paginator__button paginator__button"></button>
+                </li>
               </ol>
             </div>
           </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" id="advantages">
           <div class="container advantages__container">
             <h2 class="title title_size_biggest advantages__title">
               Почему beats solo 3?
@@ -135,21 +155,23 @@
             </ul>
           </div>
         </section>
-        <section class="models">
+        <section class="models" id="models">
           <h2 class="visually-hidden">Модели Beats Solo 3</h2>
           <button
             class="slider-button models__button models__button_left"
             style="background-image: url(/img/icons/left.svg)"
+            onclick="document.querySelectorAll('.models__item').forEach(article => article.classList.toggle('models__item_active'))"
           >
             <span class="visually-hidden">Предыдущая модель</span>
           </button>
           <button
             class="slider-button models__button models__button_right"
             style="background-image: url(/img/icons/right.svg)"
+            onclick="document.querySelectorAll('.models__item').forEach(article => article.classList.toggle('models__item_active'))"
           >
             <span class="visually-hidden">Следующая модель</span>
           </button>
-          <article class="model models__item models__item-active">
+          <article class="model models__item models__item_active">
             <div class="img-container model__img-container">
               <img
                 class="model__img"
@@ -159,10 +181,11 @@
             </div>
             <div class="model__info">
               <div class="properties model__properties">
-                <button class="properties__button">
-                  <span class="visually-hidden">Характеристики</span>
-                </button>
-                <dl class="properties__list properties__list_active">
+                <button
+                  class="properties__button"
+                  onclick="document.querySelectorAll('.properties__list').forEach(list => list.classList.toggle('properties__list_active'))"
+                ></button>
+                <dl class="properties__list">
                   <div class="properties__item">
                     <dt class="properties__name">Bluetooth</dt>
                     <dd class="properties__value">4.0</dd>
@@ -211,8 +234,73 @@
               </div>
             </div>
           </article>
+          <article class="model models__item">
+            <div class="img-container model__img-container">
+              <img
+                class="model__img"
+                src="img/headphones_big_2_red.jpg"
+                alt="beats solo pro. цвет «красный цитрус»"
+              />
+            </div>
+            <div class="model__info">
+              <div class="properties model__properties">
+                <button
+                  class="properties__button"
+                  onclick="document.querySelectorAll('.properties__list').forEach(list => list.classList.toggle('properties__list_active'))"
+                >
+                  <span class="visually-hidden">Характеристики</span>
+                </button>
+                <dl class="properties__list">
+                  <div class="properties__item">
+                    <dt class="properties__name">Bluetooth</dt>
+                    <dd class="properties__value">4.0</dd>
+                  </div>
+                  <div class="properties__item">
+                    <dt class="properties__name">Дальность</dt>
+                    <dd class="properties__value">10 м</dd>
+                  </div>
+                  <div class="properties__item">
+                    <dt class="properties__name">Зарядка</dt>
+                    <dd class="properties__value">2 ч</dd>
+                  </div>
+                  <div class="properties__item">
+                    <dt class="properties__name">Вес</dt>
+                    <dd class="properties__value">215гр</dd>
+                  </div>
+                  <div class="properties__item">
+                    <dt class="properties__name">Гарантия</dt>
+                    <dd class="properties__value">1 год</dd>
+                  </div>
+                </dl>
+              </div>
+              <h3 class="title title_size_big model__title">
+                Beats solo pro. цвет «красный цитрус»
+              </h3>
+              <div class="model__text">
+                Беспроводные наушники Solo Pro помогают настроиться на
+                творчество. Для этого предусмотрено два режима прослушивания:
+                режим с активным шумоподавлением и Прозрачный режим.
+              </div>
+              <dl class="model__details-list">
+                <div class="model__details-item">
+                  <dt class="model__details-name">Зарядка</dt>
+                  <dd class="model__details-value"><b>2 часа</b></dd>
+                </div>
+                <div class="model__details-item">
+                  <dt class="model__details-name">Вес</dt>
+                  <dd class="model__details-value"><b>215 грамм</b></dd>
+                </div>
+              </dl>
+              <div class="model__order">
+                <b class="model__price">14 990 ₽</b>
+                <a class="button button_bg_red model__button" href="#"
+                  >Заказать</a
+                >
+              </div>
+            </div>
+          </article>
         </section>
-        <section class="team">
+        <section class="team" id="team">
           <div class="container team__container">
             <h2 class="title title_size_biggest team__title">Команда</h2>
             <ul class="team__list">
@@ -284,7 +372,7 @@
             </ul>
           </div>
         </section>
-        <section class="colors">
+        <section class="colors" id="colors">
           <div class="container colors__container">
             <h2 class="title title_size_biggest colors__title">Цвета</h2>
             <ul class="colors__list">
@@ -330,10 +418,13 @@
             </ul>
           </div>
         </section>
-        <section class="feedbacks">
+        <section class="feedbacks" id="feedbacks">
           <div class="container feedbacks__container">
             <h2 class="title title_size_biggest feedbacks__title">Отзывы</h2>
-            <div class="feedback feedbacks__card">
+            <div
+              class="feedback feedbacks__card feedbacks__card_active"
+              id="feedback1"
+            >
               <img
                 class="feedback__img"
                 src="/img/feedback1.jpg"
@@ -351,47 +442,238 @@
                 <span class="feedback__author">Билли Айлиш</span>
               </div>
             </div>
+            <div class="feedback feedbacks__card" id="feedback2">
+              <img
+                class="feedback__img"
+                src="/img/feedback2.jpg"
+                alt="Вадим Грачев"
+              />
+              <div class="feedback__info">
+                <h3 class="feedback__title">Крутой дизайн</h3>
+                <blockquote class="feedback__text">
+                  После тренировок всегда хочется быстро закинуться чем-то
+                  белковым, потому что до дома ещё нужно доехать. А кушать
+                  хочется. Протеиновые батончики всегда выручают в этом плане.
+                  Спасибо производителю за этот качественный и экологичный
+                  продукт.
+                </blockquote>
+                <span class="feedback__author">Вадим Грачев</span>
+              </div>
+            </div>
+            <div class="feedback feedbacks__card" id="feedback3">
+              <img
+                class="feedback__img"
+                src="/img/feedback3.jpg"
+                alt="Мария Орлова"
+              />
+              <div class="feedback__info">
+                <h3 class="feedback__title">На долго хватает заряда</h3>
+                <blockquote class="feedback__text">
+                  Батончики понравились. На мой взгляд слегка завышена цена по
+                  сравнению с конкурентами, однако, как говорится – оно того
+                  стоит. Нравится носить с собой, нравится держать в руке. Ну и
+                  конечно же, кушать. Идеально утоляют голод, хоть и не надолго.
+                  Через час уже ем ещё один. Но это скорее плюс, чем минус.
+                </blockquote>
+                <span class="feedback__author">Мария Орлова</span>
+              </div>
+            </div>
             <ul class="feedbacks__list">
-              <li class="feedbacks__item feedbacks__item_active">
-                <img
-                  class="feedbacks__img"
-                  src="/img/feedback1.jpg"
-                  alt="Билли Айлиш"
-                />
+              <li class="feedbacks__item">
+                <button
+                  class="feedbacks__button feedbacks__button_active"
+                  onclick="
+                  document.querySelector('.feedbacks__button_active').classList.remove('feedbacks__button_active');
+                  this.classList.add('feedbacks__button_active');
+                  document.querySelector('.feedbacks__card_active').classList.remove('feedbacks__card_active');
+                  document.getElementById('feedback1').classList.add('feedbacks__card_active');"
+                >
+                  <img
+                    class="feedbacks__img"
+                    src="/img/feedback1.jpg"
+                    alt="Билли Айлиш"
+                  />
+                </button>
               </li>
               <li class="feedbacks__item">
-                <img
-                  class="feedbacks__img"
-                  src="/img/feedback2.jpg"
-                  alt="Вадим Грачев"
-                />
+                <button
+                  class="feedbacks__button feedbacks__button"
+                  onclick="
+                  document.querySelector('.feedbacks__button_active').classList.remove('feedbacks__button_active');
+                  this.classList.add('feedbacks__button_active');
+                  document.querySelector('.feedbacks__card_active').classList.remove('feedbacks__card_active');
+                  document.getElementById('feedback2').classList.add('feedbacks__card_active');"
+                >
+                  <img
+                    class="feedbacks__img"
+                    src="/img/feedback2.jpg"
+                    alt="Вадим Грачев"
+                  />
+                </button>
               </li>
               <li class="feedbacks__item">
-                <img
-                  class="feedbacks__img"
-                  src="/img/feedback3.jpg"
-                  alt="Мария Орлова"
-                />
+                <button
+                  class="feedbacks__button feedbacks__button"
+                  onclick="
+                  document.querySelector('.feedbacks__button_active').classList.remove('feedbacks__button_active');
+                  this.classList.add('feedbacks__button_active');
+                  document.querySelector('.feedbacks__card_active').classList.remove('feedbacks__card_active');
+                  document.getElementById('feedback3').classList.add('feedbacks__card_active');"
+                >
+                  <img
+                    class="feedbacks__img"
+                    src="/img/feedback3.jpg"
+                    alt="Мария Орлова"
+                  />
+                </button>
               </li>
             </ul>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="container about__container">
             <h2 class="title title_size_biggest about__title">
               Как мы работаем
             </h2>
             <video
               class="about__video"
-              src=""
-              type="mp4"
               controls
               width="662"
+              height="392"
             ></video>
           </div>
         </section>
+        <section class="delivery">
+          <div class="container delivery__container">
+            <h2 class="title title_size_biggest delivery__title">
+              Закажите доставку
+            </h2>
+            <form class="form delivery__form" action="#">
+              <div class="form__data">
+                <label class="form__label">
+                  <span class="form__text">Имя</span>
+                  <input class="form__name" type="text" />
+                </label>
+                <label class="form__label">
+                  <span class="form__text">Телефон</span>
+                  <input class="form__phone" type="text" />
+                </label>
+                <label class="form__label">
+                  <span class="form__text">Улица</span>
+                  <input class="form__street" type="text" />
+                </label>
+                <label class="form__label">
+                  <span class="form__text">Дом</span>
+                  <input class="form__house" type="text" />
+                </label>
+                <label class="form__label">
+                  <span class="form__text">Корпус</span>
+                  <input class="form__building" type="text" />
+                </label>
+                <label class="form__label">
+                  <span class="form__text">Квартира</span>
+                  <input class="form__flat" type="text" />
+                </label>
+                <label class="form__label">
+                  <span class="form__text">Этаж</span>
+                  <input class="form__floor" type="text" />
+                </label>
+              </div>
+              <div class="form__order">
+                <label class="form__label">
+                  <span class="form__text">Комментарий</span>
+                  <textarea class="form__comment"></textarea>
+                </label>
+                <div class="form__radio-container">
+                  <label class="form__label">
+                    <input
+                      class="form__radio"
+                      type="radio"
+                      name="payment"
+                      value="cash"
+                    />
+                    <span class="form__text">Потребуется сдач</span>
+                  </label>
+                  <label class="form__label">
+                    <input
+                      class="form__radio"
+                      type="radio"
+                      name="payment"
+                      value="card"
+                      checked
+                    />
+                    <span class="form__text">Оплата картой</span>
+                  </label>
+                </div>
+                <label class="form__label">
+                  <input
+                    class="form__checkbox"
+                    type="checkbox"
+                    name="no-call"
+                    checked
+                  />
+                  <span class="form__text">Не перезваниват</span>
+                </label>
+                <div class="form__button-container">
+                  <button
+                    class="button button_bg_red form__submit"
+                    type="submit"
+                  >
+                    Заказать
+                  </button>
+                  <button class="form__reset" type="reset">Очистить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="delivery__popup">
+            <span class="delivery__message">Сообщение отправлено</span>
+            <button class="button button_bg_red delivery__button">
+              Закрыть
+            </button>
+          </div>
+        </section>
+        <section
+          class="map"
+          style="height: 652px; background-image: url(img/map.jpg)"
+        >
+          <h2 class="visually-hidden">Мы на карте</h2>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="contacts footer__contacts">
+            <address class="footer__address">
+              Москва, ул.Новый Арбат, д.31/12
+            </address>
+            <a class="contacts__phone" href="tel:+78009039090"
+              >8 800 903 90 90</a
+            >
+          </div>
+          <ul class="socials footer__socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#"
+                ><span class="visually-hidden">Мы Вконтакте</span></a
+              >
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#"
+                ><span class="visually-hidden">Мы в Фейсбуке</span></a
+              >
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#"
+                ><span class="visually-hidden">Мы в Инстаграме</span></a
+              >
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#"
+                ><span class="visually-hidden">Мы в Телеграме</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

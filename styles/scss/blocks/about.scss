@@ -1,0 +1,26 @@
+.about {
+  position: relative;
+  background-color: #f8faf9;
+
+  &__container {
+    max-width: 664px;
+    padding-top: 60px;
+    padding-bottom: 103px;
+  }
+  &__title {
+    color: $black;
+    text-align: center;
+    margin-bottom: 44px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #868686;
+    top: -15px;
+    left: 7%;
+  }
+}

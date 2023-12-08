@@ -1,0 +1,46 @@
+.delivery {
+  position: relative;
+  background-color: #181818;
+  color: white;
+  &__container {
+    max-width: 940px;
+    padding: 70px 0px 88px;
+  }
+  &__title {
+    color: white;
+    margin-bottom: 61px;
+    text-align: center;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $red;
+    width: 48px;
+    height: 46px;
+    top: -24px;
+    right: 9%;
+    transform: rotate(-15deg);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  }
+  &__popup {
+    @include body2semibold;
+    display: none;
+    position: absolute;
+    top: calc(50% - 88px);
+    left: calc(50% - 155px);
+    width: 309px;
+    height: 176px;
+    background-color: #fff;
+    color: #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    &_active {
+      display: flex;
+    }
+  }
+  &__button {
+    border: none;
+  }
+}

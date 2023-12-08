@@ -69,6 +69,10 @@
   }
 
   &__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     max-width: 489px;
     margin-left: -56px;
   }
@@ -80,6 +84,6 @@
 
   &__paginator {
     margin-top: -42px;
-    margin-left: 39px;
+    margin-left: 37px;
   }
 }

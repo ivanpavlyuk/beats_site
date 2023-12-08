@@ -1,6 +1,6 @@
 .feedbacks {
   &__container {
-    padding: 63px 0px;
+    padding: 63px 0px 61px;
     max-width: 942px;
   }
   &__title {
@@ -11,24 +11,30 @@
   }
   &__card {
     margin-bottom: 15px;
+    display: none;
+    &_active {
+      display: flex;
+    }
   }
   &__list {
     display: flex;
     justify-content: center;
     gap: 6px;
   }
-  &__item {
+  &__button {
     width: 74px;
     height: 74px;
     border-radius: 50%;
     overflow: hidden;
+    border: none;
+    cursor: pointer;
     &_active {
-      border: 4px solid #e01f3d;
+      outline: 4px solid #e01f3d;
+      outline-offset: -3.8px;
     }
   }
   &__img {
     width: 74px;
-    height: 74px;
     object-fit: cover;
     border-radius: 50%;
   }

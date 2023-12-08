@@ -1,9 +1,8 @@
 .paginator {
   display: flex;
   flex-direction: column;
-  gap: 7.5px;
 
-  &__item {
+  &__button {
     width: 5px;
     height: 5px;
     border-radius: 50%;
@@ -12,7 +11,7 @@
     background-color: rgba($color: $black, $alpha: 0.6);
   }
 
-  &__item_active {
+  &__button_active {
     outline: 1px solid $red;
     background-color: $red;
   }

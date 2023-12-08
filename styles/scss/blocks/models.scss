@@ -27,4 +27,10 @@
     border-top: 17px solid transparent;
     border-bottom: 34px solid $red;
   }
+  &__item {
+    display: none;
+    &_active {
+      display: flex;
+    }
+  }
 }
