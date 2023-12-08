@@ -11,17 +11,7 @@
     margin-bottom: 61px;
     text-align: center;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: $red;
-    width: 48px;
-    height: 46px;
-    top: -24px;
-    right: 9%;
-    transform: rotate(-15deg);
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  }
+
   &__popup {
     @include body2semibold;
     display: none;

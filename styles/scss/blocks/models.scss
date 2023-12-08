@@ -16,21 +16,22 @@
     }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -18px;
-    left: 4%;
-    transform: rotate(226deg);
-    border-left: 17px solid transparent;
-    border-right: 17px solid transparent;
-    border-top: 17px solid transparent;
-    border-bottom: 34px solid $red;
-  }
   &__item {
     display: none;
     &_active {
       display: flex;
     }
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: $black;
+    position: absolute;
+    bottom: -17px;
+    right: 7%;
+    transform: rotate(30deg);
+    z-index: 5;
   }
 }

@@ -1,9 +1,9 @@
 .wrapper {
-  color: $black;
-  max-width: 1100px;
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  &__main-content {
+    color: $black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

@@ -12,15 +12,16 @@
     text-align: center;
     margin-bottom: 44px;
   }
-
-  &:before {
+  &::before {
     content: "";
     position: absolute;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #868686;
-    top: -15px;
-    left: 7%;
+    background-color: $red;
+    width: 48px;
+    height: 46px;
+    bottom: -24px;
+    right: 9%;
+    transform: rotate(-15deg);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    z-index: 5;
   }
 }

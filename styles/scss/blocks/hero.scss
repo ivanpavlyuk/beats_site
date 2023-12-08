@@ -1,16 +1,13 @@
 .hero {
-  background-color: #f5f5f5;
-  padding-bottom: 52px;
-  position: relative;
-
-  &__container {
-    display: flex;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
 
   &__title {
     margin-top: 49px;
     margin-bottom: 22px;
-    max-width: 400px;
+    max-width: 47%;
     line-height: 1.08;
   }
 
@@ -23,67 +20,5 @@
   }
 
   &__button {
-    margin-bottom: 69px;
-  }
-
-  &__list {
-    display: flex;
-    justify-content: start;
-    align-items: baseline;
-    column-gap: 8px;
-  }
-
-  &__item {
-    max-width: 166px;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    line-height: 1.15;
-  }
-
-  &__item-text {
-    width: 166px;
-  }
-
-  &__item::before {
-    content: "";
-    display: inline-block;
-    min-width: 41px;
-    height: 41px;
-    margin-right: 11px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &__item:first-of-type::before {
-    background-image: url(../../../img/icons/noise\ 1.svg);
-    background-size: 96%;
-  }
-  &__item:nth-of-type(2)::before {
-    background-image: url(../../../img/icons/charging\ 1.svg);
-    background-size: 93%;
-  }
-  &__item:nth-of-type(3)::before {
-    background-image: url(../../../img/icons/plug\ 1.svg);
-    background-size: 93%;
-  }
-
-  &__img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    max-width: 489px;
-    margin-left: -56px;
-  }
-
-  &__img {
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  &__paginator {
-    margin-top: -42px;
-    margin-left: 37px;
   }
 }

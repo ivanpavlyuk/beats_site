@@ -1,6 +1,8 @@
 .model {
   display: flex;
+  justify-content: center;
   align-items: start;
+  flex-wrap: wrap;
   padding-top: 66px;
   padding-bottom: 94px;
   padding-left: 107px;
@@ -25,6 +27,7 @@
   &__title {
     margin-bottom: 24px;
     line-height: 1.2;
+    max-width: 420px;
   }
 
   &__text {

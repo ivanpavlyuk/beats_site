@@ -1,11 +1,12 @@
-.nav {
+.menu {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 18px;
   line-height: 1.66;
 
   &__list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
   }
 
   &__item:not(.nav__item:last-of-type) {

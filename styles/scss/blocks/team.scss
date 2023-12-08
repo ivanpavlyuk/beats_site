@@ -3,18 +3,6 @@
   padding-bottom: 24px;
   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-color: $black;
-    position: absolute;
-    top: -7px;
-    right: 7%;
-    transform: rotate(30deg);
-  }
-
   &__container {
     max-width: 942px;
   }
@@ -27,6 +15,8 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 20px;
   }
 

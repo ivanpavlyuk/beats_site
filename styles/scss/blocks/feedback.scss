@@ -3,10 +3,12 @@
   padding: 42px;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 40px;
 
   &__img {
     width: 253px;
+    object-fit: cover;
   }
   &__info {
     display: flex;

@@ -6,12 +6,13 @@
   &__phone {
     display: flex;
     align-items: center;
+    white-space: nowrap;
   }
 
   &__phone::before {
     content: "";
     display: inline-block;
-    margin-right: 7px;
+    margin-right: 6px;
     width: 14px;
     height: 14px;
     background-image: url(../../../img/icons/phone.svg);
