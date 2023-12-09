@@ -385,7 +385,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url(/img/headphones_big_png.png);
+  background-image: url(img/headphones_big_png.png);
   background-repeat: no-repeat;
   background-position: bottom 50% right 10%;
   background-size: 51%;
@@ -718,7 +718,7 @@ a {
   position: absolute;
   top: 50%;
   right: -95%;
-  background-image: url(/img/icons/Combined\ shape\ 2203.svg);
+  background-image: url(img/icons/Combined\ shape\ 2203.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -931,7 +931,7 @@ a {
   width: 91px;
   height: 91px;
   background-color: #9a9a9a;
-  background-image: url(/img/icons/gear\ 1.svg);
+  background-image: url(img/icons/gear\ 1.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 46%;
@@ -975,19 +975,19 @@ a {
   background-size: 100%;
 }
 .properties__item:nth-child(1)::before {
-  background-image: url(/img/icons/bluetooth\ 1.svg);
+  background-image: url(img/icons/bluetooth\ 1.svg);
 }
 .properties__item:nth-child(2)::before {
-  background-image: url(/img/icons/road\ 1.svg);
+  background-image: url(img/icons/road\ 1.svg);
 }
 .properties__item:nth-child(3)::before {
-  background-image: url(/img/icons/charger\ 1.svg);
+  background-image: url(img/icons/charger\ 1.svg);
 }
 .properties__item:nth-child(4)::before {
-  background-image: url(/img/icons/kg\ 1.svg);
+  background-image: url(img/icons/kg\ 1.svg);
 }
 .properties__item:nth-child(5)::before {
-  background-image: url(/img/icons/patent\ 1.svg);
+  background-image: url(img/icons/patent\ 1.svg);
 }
 .properties__value {
   margin-left: auto;
@@ -1085,7 +1085,7 @@ a {
 }
 
 .colors {
-  background-image: url(/img/Slider.jpg);
+  background-image: url(img/Slider.jpg);
   color: #fff;
   overflow-x: hidden;
 }
@@ -1515,7 +1515,7 @@ a {
   margin-right: 10px;
 }
 .form__checkbox:checked + .form__text::before {
-  background-image: url(/img/icons/checkmark_red.svg);
+  background-image: url(img/icons/checkmark_red.svg);
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1583,14 +1583,14 @@ a {
   background-position: center;
 }
 .socials__item:nth-child(1) .socials__link {
-  background-image: url(/img/icons/vk.svg);
+  background-image: url(img/icons/vk.svg);
 }
 .socials__item:nth-child(2) .socials__link {
-  background-image: url(/img/icons/facebook.svg);
+  background-image: url(img/icons/facebook.svg);
 }
 .socials__item:nth-child(3) .socials__link {
-  background-image: url(/img/icons/insta.svg);
+  background-image: url(img/icons/insta.svg);
 }
 .socials__item:nth-child(4) .socials__link {
-  background-image: url(/img/icons/telegram.svg);
+  background-image: url(img/icons/telegram.svg);
 }
