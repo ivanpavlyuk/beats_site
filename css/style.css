@@ -1212,6 +1212,7 @@ a {
   margin-bottom: 6px;
   display: flex;
   align-items: center;
+  user-select: none;
 }
 .form__textarea-row {
   margin-bottom: 42px;

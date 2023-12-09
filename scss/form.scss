@@ -40,6 +40,7 @@
     margin-bottom: 6px;
     display: flex;
     align-items: center;
+    user-select: none;
   }
 
   &__textarea-row {
