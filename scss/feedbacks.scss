@@ -1,6 +1,6 @@
 .feedbacks {
-  position: relative;
   &__container {
+    position: relative;
     padding: 63px 0px 61px;
     max-width: 942px;
   }
@@ -39,7 +39,7 @@
     object-fit: cover;
     border-radius: 50%;
   }
-  &:after {
+  &__container:after {
     content: "";
     position: absolute;
     width: 35px;
@@ -47,7 +47,7 @@
     border-radius: 50%;
     background-color: #868686;
     bottom: -20px;
-    left: 7%;
+    left: 0;
     z-index: 5;
   }
 }

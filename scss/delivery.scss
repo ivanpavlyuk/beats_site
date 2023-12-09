@@ -1,10 +1,9 @@
 .delivery {
-  position: relative;
   background-color: #181818;
   color: white;
   &__container {
-    max-width: 940px;
-    padding: 70px 0px 88px;
+    max-width: 960px;
+    padding: 70px 10px 88px;
   }
   &__title {
     color: white;
@@ -15,7 +14,7 @@
   &__popup {
     @include body2semibold;
     display: none;
-    position: absolute;
+    position: fixed;
     top: calc(50% - 88px);
     left: calc(50% - 155px);
     width: 309px;
@@ -29,8 +28,5 @@
     &_active {
       display: flex;
     }
-  }
-  &__button {
-    border: none;
   }
 }

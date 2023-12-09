@@ -6,4 +6,11 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  &__fixed-paginator {
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-65%);
+  }
 }

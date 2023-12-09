@@ -1,11 +1,9 @@
 .advantages {
-  position: relative;
-  padding-top: 105px;
-  padding-bottom: 98px;
   color: $black;
   &__container {
-    max-width: 960px;
-    padding: 0 10px;
+    position: relative;
+    max-width: 976px;
+    padding: 105px 20px 98px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -30,7 +28,7 @@
 
   &__list {
     display: flex;
-    gap: 55px;
+    gap: 83px;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -39,23 +37,23 @@
     max-width: 276px;
   }
 
-  .advantage-card__img-container::after {
+  .advantage-card__img:not(&__item:last-of-type .advantage-card__img):after {
     content: "";
     width: 67px;
     height: 21px;
     position: absolute;
-    top: 50%;
-    right: -95%;
+    top: 45%;
+    right: -107%;
     background-image: url(../img/icons/Combined_shape.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
-  &::after {
+  &__container::after {
     content: "";
     position: absolute;
     bottom: -32px;
-    left: 4%;
+    left: -1%;
     transform: rotate(226deg);
     border-left: 17px solid transparent;
     border-right: 17px solid transparent;

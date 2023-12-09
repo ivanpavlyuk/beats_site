@@ -2,7 +2,8 @@
   display: flex;
   justify-content: start;
   align-items: baseline;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
 
   &__item {
     max-width: 166px;
@@ -28,12 +29,12 @@
   }
 
   &__item:first-of-type::before {
-    background-image: url(../img/icons/noise\ 1.svg);
+    background-image: url(../img/icons/noise1.svg);
   }
   &__item:nth-of-type(2)::before {
-    background-image: url(../img/icons/charging\ 1.svg);
+    background-image: url(../img/icons/charging1.svg);
   }
   &__item:nth-of-type(3)::before {
-    background-image: url(../img/icons/plug\ 1.svg);
+    background-image: url(../img/icons/plug1.svg);
   }
 }

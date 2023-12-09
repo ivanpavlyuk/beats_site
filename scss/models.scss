@@ -1,18 +1,24 @@
 .models {
   background-color: #f8faf9;
-  position: relative;
 
+  &__container {
+    position: relative;
+    max-width: 1010px;
+    padding: 0 10px;
+    padding-top: 66px;
+    padding-bottom: 94px;
+  }
   &__button {
     position: absolute;
 
     &_left {
       top: calc(50% - 20px);
-      left: 55px;
+      left: 10px;
     }
 
     &_right {
       top: calc(50% - 19px);
-      right: 55px;
+      right: 10px;
     }
   }
 
@@ -22,7 +28,7 @@
       display: flex;
     }
   }
-  &::after {
+  &__container::after {
     content: "";
     display: block;
     width: 24px;
@@ -30,7 +36,7 @@
     background-color: $black;
     position: absolute;
     bottom: -17px;
-    right: 7%;
+    right: 3%;
     transform: rotate(30deg);
     z-index: 5;
   }

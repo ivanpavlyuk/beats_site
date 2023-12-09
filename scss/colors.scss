@@ -1,12 +1,11 @@
 .colors {
-  background-image: url(../img/Slider.jpg);
   color: #fff;
-  overflow-x: hidden;
 
   &__container {
-    max-width: 100%;
+    background-image: url(../img/Slider.jpg);
     height: 652px;
     position: relative;
+    overflow-x: hidden;
   }
 
   &__title {

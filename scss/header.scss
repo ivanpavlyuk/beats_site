@@ -9,10 +9,11 @@
     padding: 21px 10px 70px;
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
     justify-content: space-between;
     background-image: url(../img/headphones_big_png.png);
     background-repeat: no-repeat;
-    background-position: bottom 50% right 10%;
+    background-position: bottom 50% right 6%;
     background-size: 51%;
 
     &:before {
@@ -43,11 +44,5 @@
   &__menu {
     margin-top: 5px;
     margin-right: 20px;
-  }
-  &__paginator {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }
