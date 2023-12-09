@@ -10,15 +10,15 @@
     background-position: center;
   }
   &__item:nth-child(1) &__link {
-    background-image: url(img/icons/vk.svg);
+    background-image: url(../../../img/icons/vk.svg);
   }
   &__item:nth-child(2) &__link {
-    background-image: url(img/icons/facebook.svg);
+    background-image: url(../../../img/icons/facebook.svg);
   }
   &__item:nth-child(3) &__link {
-    background-image: url(img/icons/insta.svg);
+    background-image: url(../../../img/icons/insta.svg);
   }
   &__item:nth-child(4) &__link {
-    background-image: url(img/icons/telegram.svg);
+    background-image: url(../../../img/icons/telegram.svg);
   }
 }
