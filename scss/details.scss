@@ -28,12 +28,12 @@
   }
 
   &__item:first-of-type::before {
-    background-image: url(../../../img/icons/noise\ 1.svg);
+    background-image: url(../img/icons/noise\ 1.svg);
   }
   &__item:nth-of-type(2)::before {
-    background-image: url(../../../img/icons/charging\ 1.svg);
+    background-image: url(../img/icons/charging\ 1.svg);
   }
   &__item:nth-of-type(3)::before {
-    background-image: url(../../../img/icons/plug\ 1.svg);
+    background-image: url(../img/icons/plug\ 1.svg);
   }
 }

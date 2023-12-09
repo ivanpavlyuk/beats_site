@@ -7,7 +7,7 @@
     width: 91px;
     height: 91px;
     background-color: #9a9a9a;
-    background-image: url(../../../img/icons/gear1.svg);
+    background-image: url(../img/icons/gear1.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 46%;
@@ -46,19 +46,19 @@
       background-size: 100%;
     }
     &:nth-child(1)::before {
-      background-image: url(../../../img/icons/bluetooth1.svg);
+      background-image: url(../img/icons/bluetooth1.svg);
     }
     &:nth-child(2)::before {
-      background-image: url(../../../img/icons/road1.svg);
+      background-image: url(../img/icons/road1.svg);
     }
     &:nth-child(3)::before {
-      background-image: url(../../../img/icons/charger1.svg);
+      background-image: url(../img/icons/charger1.svg);
     }
     &:nth-child(4)::before {
-      background-image: url(../../../img/icons/kg1.svg);
+      background-image: url(../img/icons/kg1.svg);
     }
     &:nth-child(5)::before {
-      background-image: url(../../../img/icons/kg1.svg);
+      background-image: url(../img/icons/kg1.svg);
     }
   }
   &__value {

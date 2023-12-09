@@ -366,7 +366,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(/beats_site/img/headphones_big_png.png);
+  background-image: url(../img/headphones_big_png.png);
   background-repeat: no-repeat;
   background-position: bottom 50% right 10%;
   background-size: 51%;
@@ -442,7 +442,7 @@ a {
   margin-right: 6px;
   width: 14px;
   height: 14px;
-  background-image: url(../../../img/icons/phone.svg);
+  background-image: url(../img/icons/phone.svg);
   background-size: contain;
 }
 
@@ -507,13 +507,13 @@ a {
   background-size: 95%;
 }
 .details__item:first-of-type::before {
-  background-image: url(../../../img/icons/noise\ 1.svg);
+  background-image: url(../img/icons/noise\ 1.svg);
 }
 .details__item:nth-of-type(2)::before {
-  background-image: url(../../../img/icons/charging\ 1.svg);
+  background-image: url(../img/icons/charging\ 1.svg);
 }
 .details__item:nth-of-type(3)::before {
-  background-image: url(../../../img/icons/plug\ 1.svg);
+  background-image: url(../img/icons/plug\ 1.svg);
 }
 
 .paginator {
@@ -622,7 +622,7 @@ a {
   position: absolute;
   top: 50%;
   right: -95%;
-  background-image: url(../../../img/icons/Combined_shape.svg);
+  background-image: url(../img/icons/Combined_shape.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -805,7 +805,7 @@ a {
   width: 91px;
   height: 91px;
   background-color: #9a9a9a;
-  background-image: url(../../../img/icons/gear1.svg);
+  background-image: url(../img/icons/gear1.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 46%;
@@ -842,19 +842,19 @@ a {
   background-size: 100%;
 }
 .properties__item:nth-child(1)::before {
-  background-image: url(../../../img/icons/bluetooth1.svg);
+  background-image: url(../img/icons/bluetooth1.svg);
 }
 .properties__item:nth-child(2)::before {
-  background-image: url(../../../img/icons/road1.svg);
+  background-image: url(../img/icons/road1.svg);
 }
 .properties__item:nth-child(3)::before {
-  background-image: url(../../../img/icons/charger1.svg);
+  background-image: url(../img/icons/charger1.svg);
 }
 .properties__item:nth-child(4)::before {
-  background-image: url(../../../img/icons/kg1.svg);
+  background-image: url(../img/icons/kg1.svg);
 }
 .properties__item:nth-child(5)::before {
-  background-image: url(../../../img/icons/kg1.svg);
+  background-image: url(../img/icons/kg1.svg);
 }
 .properties__value {
   margin-left: auto;
@@ -936,7 +936,7 @@ a {
 }
 
 .colors {
-  background-image: url(../../../img/Slider.jpg);
+  background-image: url(../img/Slider.jpg);
   color: #fff;
   overflow-x: hidden;
 }
@@ -1286,7 +1286,7 @@ a {
   margin-right: 10px;
 }
 .form__checkbox:checked + .form__text::before {
-  background-image: url(img/icons/checkmark_red.svg);
+  background-image: url(../img/icons/checkmark_red.svg);
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1337,14 +1337,14 @@ a {
   background-position: center;
 }
 .socials__item:nth-child(1) .socials__link {
-  background-image: url(../../../img/icons/vk.svg);
+  background-image: url(../img/icons/vk.svg);
 }
 .socials__item:nth-child(2) .socials__link {
-  background-image: url(../../../img/icons/facebook.svg);
+  background-image: url(../img/icons/facebook.svg);
 }
 .socials__item:nth-child(3) .socials__link {
-  background-image: url(../../../img/icons/insta.svg);
+  background-image: url(../img/icons/insta.svg);
 }
 .socials__item:nth-child(4) .socials__link {
-  background-image: url(../../../img/icons/telegram.svg);
+  background-image: url(../img/icons/telegram.svg);
 }
