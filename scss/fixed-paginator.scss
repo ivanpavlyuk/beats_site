@@ -1,9 +1,10 @@
 .fixed-paginator {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 18px;
 
   &__button {
+    display: block;
     border: none;
     border-radius: 50%;
     padding: 3px;

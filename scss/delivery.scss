@@ -4,6 +4,9 @@
   &__container {
     max-width: 960px;
     padding: 70px 10px 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   &__title {
     color: white;

@@ -3,6 +3,9 @@
     max-width: 942px;
     padding-top: 76px;
     padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__title {

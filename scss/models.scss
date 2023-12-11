@@ -7,6 +7,9 @@
     padding: 0 10px;
     padding-top: 66px;
     padding-bottom: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   &__button {
     position: absolute;

@@ -6,6 +6,9 @@
     height: 652px;
     position: relative;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__title {

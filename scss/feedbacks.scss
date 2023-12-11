@@ -3,6 +3,9 @@
     position: relative;
     padding: 63px 0px 61px;
     max-width: 942px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   &__title {
     @include headline1;
