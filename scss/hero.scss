@@ -64,12 +64,12 @@
       align-self: center;
       align-items: center;
       text-align: center;
-      margin-bottom: 80px;
+      margin-bottom: 20px;
       gap: 25px;
     }
     .content__title {
       @include tablet {
-        max-width: 90%;
+        max-width: 92%;
         margin-bottom: -20px;
       }
       @include phone {
