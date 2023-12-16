@@ -6,7 +6,10 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  &__fixed-paginator {
+  & &__fixed-paginator {
+    @include tablet {
+      display: none;
+    }
     position: fixed;
     z-index: 100;
     right: 20px;

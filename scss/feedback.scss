@@ -3,8 +3,7 @@
   padding: 42px;
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
+  gap: 38px;
 
   &__img {
     width: 253px;
@@ -15,17 +14,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    gap: 30px;
   }
   &__title {
     @include headline3;
-    margin-top: 32px;
-    margin-bottom: 27px;
   }
   &__text {
     @include body2regular;
-    max-width: 500px;
+    max-width: 93%;
     color: $grey;
-    margin-bottom: 38px;
   }
   &__author {
     @include body2bold;

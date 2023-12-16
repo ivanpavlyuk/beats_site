@@ -1,21 +1,56 @@
 .feedbacks {
   &__container {
     position: relative;
-    padding: 63px 0px 61px;
     max-width: 942px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include tablet {
+      padding: 0 22px;
+    }
   }
   &__title {
-    @include headline1;
     text-align: center;
     line-height: 1.2;
     margin-bottom: 26px;
+    z-index: 5;
   }
   &__card {
     margin-bottom: 15px;
     display: none;
+    @include tablet {
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 56px 25px 0;
+      margin-bottom: 35px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: calc(50% - 40px);
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+      & .feedback__info {
+        align-items: center;
+        gap: 15px;
+      }
+      & .feedback__img {
+        width: 130px;
+      }
+      & .feedback__title {
+        margin-top: 0;
+      }
+      & .feedback__author {
+        margin-bottom: 40px;
+      }
+    }
     &_active {
       display: flex;
     }
@@ -52,5 +87,8 @@
     bottom: -20px;
     left: 0;
     z-index: 5;
+    @include tablet {
+      left: 4%;
+    }
   }
 }

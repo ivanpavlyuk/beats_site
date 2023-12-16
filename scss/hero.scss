@@ -1,6 +1,5 @@
 .hero {
   background-color: #f5f5f5;
-  height: 100vh;
 
   &__container {
     position: relative;
@@ -15,6 +14,14 @@
     background-repeat: no-repeat;
     background-position: bottom 50% right 6%;
     background-size: 51%;
+    @include tablet {
+      background-position: top 30% right 50%;
+      background-size: 43%;
+    }
+    @include phone {
+      background-position: top 20% right 50%;
+      background-size: 65%;
+    }
 
     &:before {
       content: "";
@@ -32,17 +39,69 @@
   &__header {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
+    padding: 0 10px;
+    @include tablet {
+      justify-content: space-between;
+    }
+    @include phone {
+      padding: 0;
+    }
+  }
+  &__menu {
+    @include tablet {
+      display: none;
+    }
+  }
+  &__contacts {
+    @include tablet {
+      display: none;
+    }
   }
 
   &__content {
     align-self: start;
+    @include tablet {
+      align-self: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 80px;
+      gap: 25px;
+    }
+    .content__title {
+      @include tablet {
+        max-width: 90%;
+        margin-bottom: -20px;
+      }
+      @include phone {
+        max-width: 70%;
+        margin-bottom: -20px;
+      }
+    }
+    .content__text {
+      @include tablet {
+        max-width: 50%;
+      }
+      @include phone {
+        max-width: 80%;
+      }
+    }
   }
   &__logo {
     margin-right: 40px;
+    align-self: start;
   }
   &__menu {
     margin-top: 5px;
     margin-right: 20px;
+  }
+  &__burger {
+    width: 26px;
+    align-self: center;
+  }
+  &__details {
+    @include tablet {
+      display: none;
+    }
   }
 }

@@ -3,10 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  gap: 30px;
 
   &__title {
-    margin-top: 49px;
-    margin-bottom: 22px;
     max-width: 47%;
     line-height: 1.08;
   }
@@ -15,10 +14,6 @@
     font-family: "Alegreya Sans", sans-serif;
     font-size: 21px;
     line-height: 1.2;
-    margin-bottom: 36px;
-    max-width: 332px;
-  }
-
-  &__button {
+    max-width: 35%;
   }
 }

@@ -1,0 +1,14 @@
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  @include tablet {
+    display: flex;
+  }
+  &__bar {
+    background-color: $black;
+    padding: 2px;
+    border-radius: 5px;
+  }
+}

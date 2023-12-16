@@ -1,8 +1,17 @@
 .form {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 27px;
+  @include tablet {
+    flex-direction: column;
+    max-width: 70%;
+    gap: 0;
+  }
+  @include tablet {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 0;
+  }
 
   &__input {
     border-radius: 5px;
@@ -14,6 +23,9 @@
     padding: 18px 12px 20px;
     resize: none;
     width: 100%;
+    @include tablet {
+      padding: 8px 10px;
+    }
   }
 
   &__input:focus {
@@ -37,6 +49,7 @@
     flex: 1;
   }
   &__text {
+    @include body2regular;
     margin-bottom: 6px;
     display: flex;
     align-items: center;
@@ -45,13 +58,32 @@
 
   &__textarea-row {
     margin-bottom: 42px;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  & textarea {
+    @include tablet {
+      max-width: 466px;
+      max-height: 82px;
+    }
   }
 
   &__radio-row {
     gap: 25px;
+    @include phone {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__radio-row label {
     flex: initial;
+  }
+  &__checkbox-row &__label {
+    @include phone {
+      align-items: center;
+    }
   }
 
   &__radio {
@@ -91,15 +123,23 @@
     }
   }
   &__button-row {
-    margin-top: 40px;
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
   }
   &__submit {
     border: none;
   }
   &__reset {
+    @include body2regular;
     background-color: transparent;
     color: white;
     border: none;
     cursor: pointer;
+    &:hover {
+      color: $red;
+    }
   }
 }

@@ -7,12 +7,30 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    @include phone {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
   &__contacts {
     margin-left: 30px;
+    @include phone {
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
   }
   &__address {
     font-style: normal;
     margin-bottom: 9px;
+  }
+  & .contacts__phone {
+    color: $red;
+    @include phone {
+      font-size: 16px;
+      color: #000;
+    }
   }
 }

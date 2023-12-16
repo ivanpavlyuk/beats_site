@@ -62,3 +62,14 @@
   font-weight: 400;
   line-height: 1.18;
 }
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (max-width: 480px) {
+    @content;
+  }
+}

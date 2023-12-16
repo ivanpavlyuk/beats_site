@@ -5,5 +5,8 @@
 
   &_size_biggest {
     @include headline1;
+    @include phone {
+      font-size: 32px;
+    }
   }
 }

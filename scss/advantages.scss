@@ -2,63 +2,114 @@
   color: $black;
   &__container {
     position: relative;
-    max-width: 976px;
-    padding: 105px 20px 98px;
+    height: 100%;
+    max-width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include tablet {
+      margin-top: 30px;
+    }
+    @include phone {
+      justify-content: flex-start;
+    }
   }
 
   &__title {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
+    @include tablet {
+      margin-bottom: 15px;
+    }
   }
 
   &__text {
     @include body2regular;
     color: $grey;
-    max-width: 590px;
+    max-width: 50%;
     padding: 0 40px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 62px;
+    @include tablet {
+      margin-bottom: 52px;
+    }
+    @include phone {
+      max-width: 90%;
+    }
   }
 
   &__list {
     display: flex;
-    gap: 83px;
     justify-content: center;
-    flex-wrap: wrap;
+    @include phone {
+      flex-direction: column;
+      align-self: flex-start;
+    }
   }
 
-  &__item {
-    max-width: 276px;
+  &__item.advantage-card {
+    padding: 0 41px;
+    position: relative;
+    @include tablet {
+      padding: 0;
+
+      & .advantage-card__title {
+        margin-bottom: 20px;
+      }
+      & .advantage-card__text {
+        padding: 0 7px;
+      }
+    }
+    @include phone {
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+      gap: 10px;
+
+      & .advantage-card__title {
+        margin-bottom: 5px;
+        margin-left: 8px;
+        text-align: left;
+      }
+      & .advantage-card__text {
+        text-align: left;
+        max-width: 305px;
+        margin-bottom: 30px;
+      }
+    }
   }
 
-  .advantage-card__img:not(&__item:last-of-type .advantage-card__img):after {
+  &__item:not(&__item:last-of-type):after {
     content: "";
     width: 67px;
     height: 21px;
     position: absolute;
-    top: 45%;
-    right: -107%;
+    top: 60px;
+    right: -35px;
     background-image: url(../img/icons/Combined_shape.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @include tablet {
+      display: none;
+    }
   }
   &__container::after {
     content: "";
     position: absolute;
     bottom: -32px;
-    left: -1%;
+    left: 0;
     transform: rotate(226deg);
     border-left: 17px solid transparent;
     border-right: 17px solid transparent;
     border-top: 17px solid transparent;
     border-bottom: 34px solid $red;
     z-index: 5;
+    @include tablet {
+      left: 4%;
+    }
   }
 }

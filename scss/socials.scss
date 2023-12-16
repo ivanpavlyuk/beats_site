@@ -8,6 +8,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @include phone {
+      width: 24px;
+      height: 24px;
+    }
   }
   &__item:nth-child(1) &__link {
     background-image: url(../img/icons/vk.svg);
