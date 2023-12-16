@@ -2,20 +2,20 @@
   &__container {
     padding-top: 22px;
     padding-bottom: 18px;
-    max-width: 992px;
+    padding: 22px 30px 18px;
+    max-width: 1052px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 10px;
     @include phone {
       flex-direction: column;
       gap: 20px;
     }
   }
   &__contacts {
-    margin-left: 30px;
     @include phone {
-      margin-left: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
