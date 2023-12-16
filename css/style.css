@@ -921,6 +921,7 @@ a {
 }
 .advantage-card__img {
   position: relative;
+  flex-shrink: 0;
   width: 128px;
   height: 128px;
   border-radius: 50%;
