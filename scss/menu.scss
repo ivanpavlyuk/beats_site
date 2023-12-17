@@ -1,6 +1,6 @@
 .menu {
   font-family: "Alegreya Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.66;
 
   &__list {
@@ -10,6 +10,6 @@
   }
 
   &__item:not(.nav__item:last-of-type) {
-    margin-right: 27px;
+    margin-right: 2.7rem;
   }
 }

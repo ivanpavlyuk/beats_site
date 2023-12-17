@@ -3,38 +3,22 @@
   justify-content: start;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 0.8rem;
 
   &__item {
-    max-width: 166px;
+    max-width: 16.6rem;
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.15;
+    gap: 0.5rem;
+  }
+  &__icon {
+    width: 50px;
+    height: 50px;
   }
 
   &__item-text {
-    width: 166px;
-  }
-
-  &__item::before {
-    content: "";
-    display: inline-block;
-    min-width: 41px;
-    height: 41px;
-    margin-right: 11px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 95%;
-  }
-
-  &__item:first-of-type::before {
-    background-image: url(../img/icons/noise1.svg);
-  }
-  &__item:nth-of-type(2)::before {
-    background-image: url(../img/icons/charging1.svg);
-  }
-  &__item:nth-of-type(3)::before {
-    background-image: url(../img/icons/plug1.svg);
+    width: 16.6rem;
   }
 }

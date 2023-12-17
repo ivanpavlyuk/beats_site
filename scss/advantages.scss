@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     @include tablet {
-      margin-top: 30px;
+      margin-top: 3rem;
     }
     @include phone {
       justify-content: flex-start;
@@ -19,7 +19,7 @@
     text-align: center;
     margin-bottom: 20px;
     @include tablet {
-      margin-bottom: 15px;
+      margin-bottom: 1.5rem;
     }
   }
 
@@ -27,13 +27,13 @@
     @include body2regular;
     color: $grey;
     max-width: 90%;
-    padding: 0 40px;
+    padding: 0 4rem;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 62px;
+    margin-bottom: 6.2rem;
     max-width: 62%;
     @include tablet {
-      margin-bottom: 52px;
+      margin-bottom: 5.2rem;
       max-width: 90%;
     }
   }
@@ -48,44 +48,44 @@
   }
 
   &__item.advantage-card {
-    padding: 0 41px;
+    padding: 0 4.1rem;
     position: relative;
     @include tablet {
       padding: 0;
 
       & .advantage-card__title {
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
       }
       & .advantage-card__text {
-        padding: 0 7px;
+        padding: 0 0.7rem;
       }
     }
     @include phone {
       flex-direction: row;
       align-items: center;
       padding: 0;
-      gap: 10px;
+      gap: 1rem;
 
       & .advantage-card__title {
-        margin-bottom: 5px;
-        margin-left: 8px;
+        margin-bottom: 0.5rem;
+        margin-left: 0.8rem;
         text-align: left;
       }
       & .advantage-card__text {
         text-align: left;
-        max-width: 305px;
-        margin-bottom: 30px;
+        max-width: 30.5rem;
+        margin-bottom: 3rem;
       }
     }
   }
 
   &__item:not(&__item:last-of-type):after {
     content: "";
-    width: 67px;
-    height: 21px;
+    width: 6.7rem;
+    height: 2.1rem;
     position: absolute;
-    top: 60px;
-    right: -35px;
+    top: 6rem;
+    right: -3.5rem;
     background-image: url(../img/icons/Combined_shape.svg);
     background-size: cover;
     background-position: center;

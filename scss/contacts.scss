@@ -1,6 +1,6 @@
 .contacts {
   font-family: Play;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1;
 
   &__phone {
@@ -9,13 +9,18 @@
     white-space: nowrap;
   }
 
-  &__phone::before {
-    content: "";
-    display: inline-block;
-    margin-right: 6px;
+  &__inner {
+    display: flex;
+    gap: .5rem;
+  }
+  &__icon {
     width: 14px;
     height: 14px;
-    background-image: url(../img/icons/phone.svg);
-    background-size: contain;
+    use {
+      fill: black;
+      @include tablet {
+        fill: $red;
+      }
+    }
   }
 }

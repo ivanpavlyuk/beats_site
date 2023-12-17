@@ -3,11 +3,11 @@
 
   &__container {
     position: relative;
-    max-width: 960px;
-    padding: 21px 10px 70px;
+    max-width: 96rem;
+    padding: 2.1rem 1rem 7rem;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 2rem;
     justify-content: space-between;
     background-image: url(../img/headphones_big_png.png);
     background-repeat: no-repeat;
@@ -16,6 +16,7 @@
     @include tablet {
       background-position: top 30% right 50%;
       background-size: 43%;
+      padding-bottom: 2rem;
     }
     @include phone {
       background-position: top 20% right 50%;
@@ -39,13 +40,17 @@
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    padding: 0 10px;
+    padding: 0 1rem;
     @include tablet {
       justify-content: space-between;
     }
     @include phone {
       padding: 0;
     }
+  }
+  &__logo {
+    width: 40px;
+    height: 40px;
   }
   &__menu {
     @include tablet {
@@ -64,17 +69,17 @@
       align-self: center;
       align-items: center;
       text-align: center;
-      margin-bottom: 20px;
-      gap: 25px;
+      margin-bottom: 2rem;
+      gap: 2.5rem;
     }
     .content__title {
       @include tablet {
         max-width: 92%;
-        margin-bottom: -20px;
+        margin-bottom: -2rem;
       }
       @include phone {
         max-width: 70%;
-        margin-bottom: -20px;
+        margin-bottom: -2rem;
       }
     }
     .content__text {
@@ -87,12 +92,12 @@
     }
   }
   &__logo {
-    margin-right: 40px;
+    margin-right: 4rem;
     align-self: start;
   }
   &__menu {
-    margin-top: 5px;
-    margin-right: 20px;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
   }
   &__burger {
     width: 26px;

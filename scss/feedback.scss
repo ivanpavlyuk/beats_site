@@ -1,12 +1,12 @@
 .feedback {
   background-color: #f8faf9;
-  padding: 42px;
+  padding: 4.2rem;
   display: flex;
   justify-content: flex-start;
-  gap: 38px;
+  gap: 3.8rem;
 
   &__img {
-    width: 253px;
+    width: 25.3rem;
     object-fit: cover;
   }
   &__info {
@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px;
+    gap: 3rem;
   }
   &__title {
     @include headline3;

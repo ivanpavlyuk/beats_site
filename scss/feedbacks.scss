@@ -1,23 +1,23 @@
 .feedbacks {
   &__container {
     position: relative;
-    max-width: 942px;
-    padding: 0 10px;
+    max-width: 94.2rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     @include tablet {
-      padding: 0 22px;
+      padding: 0 2.2rem;
     }
   }
   &__title {
     text-align: center;
     line-height: 1.2;
-    margin-bottom: 26px;
+    margin-bottom: 2.6rem;
     z-index: 5;
   }
   &__card {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     display: none;
     @include tablet {
       position: relative;
@@ -25,8 +25,8 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 56px 25px 0;
-      margin-bottom: 35px;
+      padding: 5.6rem 2.5rem 0;
+      margin-bottom: 3.5rem;
       &::before {
         content: "";
         position: absolute;
@@ -39,16 +39,16 @@
       }
       & .feedback__info {
         align-items: center;
-        gap: 15px;
+        gap: 1.5rem;
       }
       & .feedback__img {
-        width: 130px;
+        width: 13rem;
       }
       & .feedback__title {
         margin-top: 0;
       }
       & .feedback__author {
-        margin-bottom: 40px;
+        margin-bottom: 4rem;
       }
     }
     &_active {
@@ -58,11 +58,11 @@
   &__list {
     display: flex;
     justify-content: center;
-    gap: 6px;
+    gap: 0.6rem;
   }
   &__button {
-    width: 74px;
-    height: 74px;
+    width: 7.4rem;
+    height: 7.4rem;
     border-radius: 50%;
     overflow: hidden;
     border: none;
@@ -73,7 +73,7 @@
     }
   }
   &__img {
-    width: 74px;
+    width: 7.4rem;
     object-fit: cover;
     border-radius: 50%;
   }
