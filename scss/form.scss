@@ -4,7 +4,7 @@
   gap: 2.7rem;
   @include tablet {
     flex-direction: column;
-    max-width: 70%;
+    max-width: 65%;
     gap: 0;
   }
   @include phone {
@@ -81,8 +81,10 @@
     flex: initial;
   }
   &__checkbox-row &__label {
+    margin-bottom: 30px;
     @include phone {
       align-items: center;
+      margin-bottom: 0;
     }
   }
 

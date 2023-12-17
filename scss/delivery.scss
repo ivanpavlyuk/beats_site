@@ -2,7 +2,8 @@
   background-color: #181818;
   color: white;
   &__container {
-    max-width: 95%;
+    max-width: 96rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

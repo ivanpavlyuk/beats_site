@@ -51,6 +51,12 @@
         margin-bottom: 4rem;
       }
     }
+    @include phone {
+      gap: 2rem;
+      &::before {
+        display: none;
+      }
+    }
     &_active {
       display: flex;
     }
@@ -71,9 +77,13 @@
       outline: 4px solid #e01f3d;
       outline-offset: -3.8px;
     }
+    @include phone {
+      width: 6.2rem;
+      height: 6.2rem;
+    }
   }
   &__img {
-    width: 7.4rem;
+    width: 100%;
     object-fit: cover;
     border-radius: 50%;
   }

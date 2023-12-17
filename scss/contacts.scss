@@ -11,15 +11,18 @@
 
   &__inner {
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
   }
   &__icon {
     width: 14px;
     height: 14px;
     use {
-      fill: black;
+      fill: $black;
       @include tablet {
         fill: $red;
+      }
+      @include phone {
+        fill: $black;
       }
     }
   }
