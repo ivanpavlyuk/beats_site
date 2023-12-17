@@ -1,6 +1,7 @@
 .advantages {
   color: $black;
   &__container {
+    padding: 0 1rem;
     position: relative;
     display: flex;
     flex-direction: column;

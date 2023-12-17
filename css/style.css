@@ -790,6 +790,7 @@ a {
   color: #292929;
 }
 .advantages__container {
+  padding: 0 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
