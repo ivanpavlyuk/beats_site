@@ -2,13 +2,16 @@
   display: none;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  border: none;
+  gap: 0.5rem;
+  cursor: pointer;
   @include tablet {
     display: flex;
   }
   &__bar {
     background-color: $black;
-    padding: 2px;
-    border-radius: 5px;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    width: 100%;
   }
 }

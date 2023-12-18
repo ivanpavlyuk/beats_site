@@ -50,11 +50,15 @@
                   >
                 </div>
               </div>
-              <div class="burger hero__burger">
+              <button
+                class="burger hero__burger"
+                onclick="document.querySelector('.fullscreen-menu').classList.add('fullscreen-menu_active');
+              "
+              >
                 <span class="burger__bar"></span>
                 <span class="burger__bar"></span>
                 <span class="burger__bar"></span>
-              </div>
+              </button>
             </header>
             <div class="content hero__content" id="hero">
               <h1 class="title title_size_biggest content__title">
@@ -794,6 +798,42 @@
           </li>
         </ol>
       </div>
+    </div>
+    <div class="fullscreen-menu">
+      <button
+        class="fullscreen-menu__button"
+        onclick="document.querySelector('.fullscreen-menu').classList.remove('fullscreen-menu_active');
+      "
+      >
+        <svg class="fullscreen-menu__icon">
+          <use xlink:href=".\img\icons\sprite.svg#close"></use>
+        </svg>
+      </button>
+      <nav class="menu menu_vertical">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#about">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#models">Наушники</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#team">Команда</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#colors">Цвета</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#feedbacks">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">Как мы работаем</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </body>
 </html>
