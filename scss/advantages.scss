@@ -10,9 +10,6 @@
     @include tablet {
       margin-top: 3rem;
     }
-    @include phone {
-      justify-content: flex-start;
-    }
   }
 
   &__title {

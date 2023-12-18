@@ -1,20 +1,20 @@
 .properties {
   position: relative;
-  width: 364px;
+  width: 36.4rem;
   @include body1semibold;
   color: #000;
   @include tablet {
     display: none;
   }
   &__button {
-    width: 91px;
-    height: 91px;
+    width: 9.1rem;
+    height: 9.1rem;
     background-color: #9a9a9a;
     background-image: url(../img/icons/gear1.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 46%;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     border: none;
     cursor: pointer;
     &:hover + .properties__list {
@@ -24,12 +24,12 @@
   &__list {
     visibility: hidden;
     width: calc(100% - 91px);
-    padding: 18px 13px 24px 30px;
+    padding: 1.8rem 1.3rem 2.4rem 3rem;
     position: absolute;
     top: 0;
     right: 0;
     background-color: #ffffffef;
-    box-shadow: 4px 4px 40px 0px #0000000f;
+    box-shadow: 0.4rem 0.4rem 4rem 0rem #0000000f;
 
     &:hover {
       visibility: visible;
@@ -40,32 +40,15 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 10px 0;
-
-    &::before {
-      content: "";
-      width: 24px;
-      height: 24px;
-      margin-right: 16px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100%;
-    }
-    &:nth-child(1)::before {
-      background-image: url(../img/icons/bluetooth1.svg);
-    }
-    &:nth-child(2)::before {
-      background-image: url(../img/icons/road1.svg);
-    }
-    &:nth-child(3)::before {
-      background-image: url(../img/icons/charger1.svg);
-    }
-    &:nth-child(4)::before {
-      background-image: url(../img/icons/kg1.svg);
-    }
-    &:nth-child(5)::before {
-      background-image: url(../img/icons/kg1.svg);
-    }
+    padding: 1rem 0;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+  &__name {
+    display: flex;
   }
   &__value {
     margin-left: auto;

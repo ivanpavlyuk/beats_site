@@ -1,17 +1,17 @@
 .model {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 
   // gap: 59px;
 
   &__img-container {
-    padding: 0 54px;
-    margin-top: 30px;
-    max-width: 50vw;
+    padding: 0 5.4rem;
+    margin-top: 3rem;
     @include tablet {
       position: relative;
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
+      max-width: 41.4rem;
     }
   }
 
@@ -21,7 +21,7 @@
   }
 
   &__properties {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
 
   &__info {
@@ -33,40 +33,46 @@
   }
 
   &__title {
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
     line-height: 1.2;
-    max-width: 420px;
+    max-width: 42rem;
     @include tablet {
-      font-size: 28px;
+      font-size: 2.8rem;
       max-width: 100%;
       text-align: center;
+    }
+    @include phone {
+      max-width: 70%;
     }
   }
 
   &__text {
     color: $grey;
     @include body2regular;
-    max-width: 368px;
-    margin-bottom: 26px;
+    max-width: 36.8rem;
+    margin-bottom: 2.6rem;
     @include tablet {
       max-width: 100%;
       text-align: center;
+    }
+    @include phone {
+      max-width: 90%;
     }
   }
 
   &__details-list {
     display: flex;
-    gap: 44px;
-    margin-bottom: 20px;
+    gap: 4.4rem;
+    margin-bottom: 2rem;
     @include tablet {
       min-width: 50%;
       justify-content: center;
-      gap: 30px;
+      gap: 3rem;
     }
   }
 
   &__details-item {
-    flex-basis: 104px;
+    flex-basis: 10.4rem;
   }
 
   &__details-name {
@@ -84,15 +90,19 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     @include tablet {
       justify-content: center;
     }
   }
 
   &__price {
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 400;
     line-height: 1.8;
-    margin-right: 22px;
+    @include phone {
+      font-size: 3.2rem;
+    }
   }
 }
