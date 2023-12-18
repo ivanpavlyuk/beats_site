@@ -365,7 +365,7 @@ a {
 .wrapper .wrapper__fixed-paginator {
   position: fixed;
   z-index: 100;
-  right: 10px;
+  right: 1rem;
   top: 50%;
   transform: translateY(-65%);
 }
@@ -630,18 +630,18 @@ a {
 .fixed-paginator {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 1.8rem;
 }
 .fixed-paginator__button {
   display: block;
   border: none;
   border-radius: 50%;
-  padding: 3px;
+  padding: 0.3rem;
   background-color: #888888;
 }
 .fixed-paginator__button_active {
-  outline: 1px solid #e01f3d;
-  outline-offset: 3px;
+  outline: 0.1rem solid #e01f3d;
+  outline-offset: 0.3rem;
   background-color: #e01f3d;
 }
 
@@ -997,7 +997,7 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.18;
-  max-width: 36.8rem;
+  max-width: 34rem;
   margin-bottom: 2.6rem;
 }
 @media (max-width: 768px) {
@@ -1122,8 +1122,8 @@ a {
 }
 
 .slider-button {
-  width: 24px;
-  height: 40px;
+  width: 2.4rem;
+  height: 4rem;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
@@ -1164,7 +1164,7 @@ a {
 }
 .properties__list {
   visibility: hidden;
-  width: calc(100% - 91px);
+  width: calc(100% - 9.1rem);
   padding: 1.8rem 1.3rem 2.4rem 3rem;
   position: absolute;
   top: 0;
@@ -1182,9 +1182,9 @@ a {
   padding: 1rem 0;
 }
 .properties__icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 16px;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1.6rem;
 }
 .properties__icon use {
   fill: #292929;
