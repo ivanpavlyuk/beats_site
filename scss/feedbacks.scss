@@ -2,12 +2,12 @@
   &__container {
     position: relative;
     max-width: 94.2rem;
-    padding: 0 1rem;
+    padding: 4rem 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     @include tablet {
-      padding: 0 2.2rem;
+      padding: 4rem 2.2rem;
     }
   }
   &__title {

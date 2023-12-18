@@ -46,6 +46,9 @@
     width: 24px;
     height: 24px;
     margin-right: 16px;
+    use {
+      fill: $black;
+    }
   }
   &__name {
     display: flex;
