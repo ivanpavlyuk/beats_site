@@ -17,11 +17,17 @@
     &_left {
       top: calc(50% - 20px);
       left: 10px;
+      @include tablet {
+        left: -10px;
+      }
     }
 
     &_right {
-      top: calc(50% - 19px);
+      top: calc(50% - 20px);
       right: 10px;
+      @include tablet {
+        right: -10px;
+      }
     }
   }
 
@@ -29,6 +35,11 @@
     display: none;
     &_active {
       display: flex;
+    }
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
   &__container::after {
