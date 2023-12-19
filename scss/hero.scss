@@ -8,15 +8,16 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10rem;
     background-image: url(../img/headphones_big_png.png);
     background-repeat: no-repeat;
     background-position: bottom 50% right 6%;
     background-size: 51%;
     @include tablet {
-      background-position: top 30% right 50%;
-      background-size: 43%;
-      padding-bottom: 2rem;
+      background-position: top 10% right 50%;
+      background-size: 45%;
+      padding-bottom: 1rem;
     }
     @include phone {
       background-position: top 20% right 50%;
@@ -33,6 +34,16 @@
       bottom: -5px;
       right: 6%;
       z-index: 5;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 70%;
+    @include tablet {
+      flex-basis: 100vh;
     }
   }
 

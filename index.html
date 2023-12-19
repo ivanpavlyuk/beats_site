@@ -11,63 +11,67 @@
       <div class="wrapper__main-content">
         <section class="section hero">
           <div class="container hero__container">
-            <header class="hero__header">
-              <svg class="logo hero__logo">
-                <use xlink:href=".\img\icons\sprite.svg#logo"></use>
-              </svg>
-              <nav class="menu hero__menu">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a class="menu__link" href="#about">О нас</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#models">Наушники</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#team">Команда</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#colors">Цвета</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#feedbacks">Отзывы</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#about">Как мы работаем</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link" href="#contacts">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="contacts hero__contacts">
-                <div class="contacts__inner">
-                  <svg class="contacts__icon">
-                    <use xlink:href=".\img\icons\sprite.svg#phone"></use>
-                  </svg>
-                  <a class="contacts__phone" href="tel:+78009039090"
-                    >8 800 903 90 90</a
-                  >
+            <div class="hero__inner">
+              <header class="hero__header">
+                <svg class="logo hero__logo">
+                  <use xlink:href=".\img\icons\sprite.svg#logo"></use>
+                </svg>
+                <nav class="menu hero__menu">
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                      <a class="menu__link" href="#about">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#models">Наушники</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#team">Команда</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#colors">Цвета</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#feedbacks">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#about">Как мы работаем</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#contacts">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="contacts hero__contacts">
+                  <div class="contacts__inner">
+                    <svg class="contacts__icon">
+                      <use xlink:href=".\img\icons\sprite.svg#phone"></use>
+                    </svg>
+                    <a class="contacts__phone" href="tel:+78009039090"
+                      >8 800 903 90 90</a
+                    >
+                  </div>
                 </div>
+                <button
+                  class="burger hero__burger"
+                  onclick="document.querySelector('.fullscreen-menu').classList.add('fullscreen-menu_active');
+                "
+                >
+                  <span class="burger__bar"></span>
+                  <span class="burger__bar"></span>
+                  <span class="burger__bar"></span>
+                </button>
+              </header>
+              <div class="content hero__content" id="hero">
+                <h1 class="title title_size_biggest content__title">
+                  Беспроводные наушники Beats Solo 3
+                </h1>
+                <p class="content__text">
+                  Встречайте новую версию наушников из линейки Powerbeats.
+                </p>
+                <a class="button button_bg_red hero__button" href="#"
+                  >Заказать</a
+                >
               </div>
-              <button
-                class="burger hero__burger"
-                onclick="document.querySelector('.fullscreen-menu').classList.add('fullscreen-menu_active');
-              "
-              >
-                <span class="burger__bar"></span>
-                <span class="burger__bar"></span>
-                <span class="burger__bar"></span>
-              </button>
-            </header>
-            <div class="content hero__content" id="hero">
-              <h1 class="title title_size_biggest content__title">
-                Беспроводные наушники Beats Solo 3
-              </h1>
-              <p class="content__text">
-                Встречайте новую версию наушников из линейки Powerbeats.
-              </p>
-              <a class="button button_bg_red hero__button" href="#">Заказать</a>
             </div>
             <ul class="details hero__details">
               <li class="details__item">

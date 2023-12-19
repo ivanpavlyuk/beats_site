@@ -394,7 +394,8 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10rem;
   background-image: url(../img/headphones_big_png.png);
   background-repeat: no-repeat;
   background-position: bottom 50% right 6%;
@@ -402,9 +403,9 @@ a {
 }
 @media (max-width: 768px) {
   .hero__container {
-    background-position: top 30% right 50%;
-    background-size: 43%;
-    padding-bottom: 2rem;
+    background-position: top 10% right 50%;
+    background-size: 45%;
+    padding-bottom: 1rem;
   }
 }
 @media (max-width: 480px) {
@@ -423,6 +424,17 @@ a {
   bottom: -5px;
   right: 6%;
   z-index: 5;
+}
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 70%;
+}
+@media (max-width: 768px) {
+  .hero__inner {
+    flex-basis: 100vh;
+  }
 }
 .hero__header {
   display: flex;
@@ -692,7 +704,8 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10rem;
   background-image: url(../img/headphones_big_png.png);
   background-repeat: no-repeat;
   background-position: bottom 50% right 6%;
@@ -700,9 +713,9 @@ a {
 }
 @media (max-width: 768px) {
   .hero__container {
-    background-position: top 30% right 50%;
-    background-size: 43%;
-    padding-bottom: 2rem;
+    background-position: top 10% right 50%;
+    background-size: 45%;
+    padding-bottom: 1rem;
   }
 }
 @media (max-width: 480px) {
@@ -721,6 +734,17 @@ a {
   bottom: -5px;
   right: 6%;
   z-index: 5;
+}
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 70%;
+}
+@media (max-width: 768px) {
+  .hero__inner {
+    flex-basis: 100vh;
+  }
 }
 .hero__header {
   display: flex;
@@ -1412,14 +1436,19 @@ a {
 .feedbacks__container {
   position: relative;
   max-width: 94.2rem;
-  padding: 4rem 1rem;
+  padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
   .feedbacks__container {
-    padding: 0rem 2.2rem 2rem;
+    padding: 2rem 2.2rem 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .feedbacks__container {
+    padding: 1rem 0;
   }
 }
 .feedbacks__title {

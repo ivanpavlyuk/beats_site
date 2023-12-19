@@ -2,14 +2,18 @@
   &__container {
     position: relative;
     max-width: 94.2rem;
-    padding: 4rem 1rem;
+    padding: 5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     @include tablet {
-      padding: 0rem 2.2rem 2rem;
+      padding: 2rem 2.2rem 4rem;
+    }
+    @include phone {
+      padding: 1rem 0;
     }
   }
+
   &__title {
     text-align: center;
     line-height: 1.2;
