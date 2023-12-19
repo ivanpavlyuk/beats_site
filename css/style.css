@@ -360,7 +360,6 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .wrapper .wrapper__fixed-paginator {
   position: fixed;
@@ -375,10 +374,14 @@ a {
   }
 }
 
+.section {
+  flex-basis: 100vh;
+}
+
 .container {
   max-width: 110rem;
   margin: 0 auto;
-  min-height: 100vh;
+  height: 100%;
 }
 
 .hero {
@@ -496,9 +499,6 @@ a {
 .hero__burger {
   width: 26px;
   align-self: center;
-}
-.hero__details {
-  margin-bottom: 10vh;
 }
 @media (max-width: 768px) {
   .hero__details {
@@ -797,9 +797,6 @@ a {
 .hero__burger {
   width: 26px;
   align-self: center;
-}
-.hero__details {
-  margin-bottom: 10vh;
 }
 @media (max-width: 768px) {
   .hero__details {
@@ -1422,7 +1419,7 @@ a {
 }
 @media (max-width: 768px) {
   .feedbacks__container {
-    padding: 4rem 2.2rem;
+    padding: 0rem 2.2rem 2rem;
   }
 }
 .feedbacks__title {
@@ -1430,6 +1427,11 @@ a {
   line-height: 1.2;
   margin-bottom: 2.6rem;
   z-index: 5;
+}
+@media (max-width: 768px) {
+  .feedbacks__title {
+    margin-bottom: 1rem;
+  }
 }
 .feedbacks__card {
   margin-bottom: 1.5rem;
@@ -1483,7 +1485,6 @@ a {
   display: flex;
   justify-content: center;
   gap: 0.6rem;
-  margin-bottom: 10vh;
 }
 .feedbacks__button {
   width: 7.4rem;

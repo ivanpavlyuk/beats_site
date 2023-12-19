@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: space-between;
     @include tablet {
-      padding: 4rem 2.2rem;
+      padding: 0rem 2.2rem 2rem;
     }
   }
   &__title {
@@ -15,6 +15,9 @@
     line-height: 1.2;
     margin-bottom: 2.6rem;
     z-index: 5;
+    @include tablet {
+      margin-bottom: 1rem;
+    }
   }
   &__card {
     margin-bottom: 1.5rem;
@@ -64,7 +67,6 @@
     display: flex;
     justify-content: center;
     gap: 0.6rem;
-    margin-bottom: 10vh;
   }
   &__button {
     width: 7.4rem;
