@@ -471,7 +471,7 @@ a {
 }
 @media (max-width: 480px) {
   .hero__content .content__title {
-    max-width: 70%;
+    max-width: 84%;
     margin-bottom: -2rem;
   }
 }
@@ -496,6 +496,9 @@ a {
 .hero__burger {
   width: 26px;
   align-self: center;
+}
+.hero__details {
+  margin-bottom: 10vh;
 }
 @media (max-width: 768px) {
   .hero__details {
@@ -769,7 +772,7 @@ a {
 }
 @media (max-width: 480px) {
   .hero__content .content__title {
-    max-width: 70%;
+    max-width: 84%;
     margin-bottom: -2rem;
   }
 }
@@ -794,6 +797,9 @@ a {
 .hero__burger {
   width: 26px;
   align-self: center;
+}
+.hero__details {
+  margin-bottom: 10vh;
 }
 @media (max-width: 768px) {
   .hero__details {
@@ -1437,7 +1443,6 @@ a {
     align-items: center;
     text-align: center;
     padding: 5.6rem 2.5rem 0;
-    margin-bottom: 3.5rem;
   }
   .feedbacks__card::before {
     content: "";
@@ -1478,6 +1483,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 0.6rem;
+  margin-bottom: 10vh;
 }
 .feedbacks__button {
   width: 7.4rem;
