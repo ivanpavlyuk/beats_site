@@ -51,11 +51,7 @@
                     >
                   </div>
                 </div>
-                <button
-                  class="burger hero__burger"
-                  onclick="document.querySelector('.fullscreen-menu').classList.add('fullscreen-menu_active');
-                "
-                >
+                <button class="burger hero__burger">
                   <span class="burger__bar"></span>
                   <span class="burger__bar"></span>
                   <span class="burger__bar"></span>
@@ -804,11 +800,7 @@
       </div>
     </div>
     <div class="fullscreen-menu">
-      <button
-        class="fullscreen-menu__button"
-        onclick="document.querySelector('.fullscreen-menu').classList.remove('fullscreen-menu_active');
-      "
-      >
+      <button class="fullscreen-menu__button">
         <svg class="fullscreen-menu__icon">
           <use xlink:href=".\img\icons\sprite.svg#close"></use>
         </svg>
@@ -839,5 +831,6 @@
         </ul>
       </nav>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
