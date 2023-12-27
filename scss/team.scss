@@ -1,11 +1,11 @@
 .team {
   &__container {
-    max-width: 942px;
-    padding-top: 76px;
-    padding-bottom: 24px;
+    max-width: 962px;
+    padding: 76px 10px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   &__title {
@@ -16,12 +16,18 @@
 
   &__list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    column-gap: 20px;
+    align-items: flex-start;
+    gap: 20px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
 
   &__item {
-    max-width: 220px;
+    flex-basis: 220px;
   }
 }

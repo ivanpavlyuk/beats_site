@@ -1,9 +1,9 @@
 .person {
-  &__details {
-    min-height: 138px;
-  }
+  display: flex;
+  flex-direction: column;
+
   &__img {
-    object-fit: cover;
+    width: 100%;
     margin-bottom: 22px;
   }
 
@@ -15,12 +15,21 @@
     line-height: 1.1;
     user-select: none;
     margin-bottom: 13px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+
+    @include tablet {
+      order: -1;
+    }
+
   }
+
   &__name-inner {
     display: block;
     position: relative;
-    cursor: pointer;
-    padding-right: 13px;
+
   }
 
   &__name-inner::after {
@@ -30,7 +39,7 @@
     border: 4px solid transparent;
     border-top: 7px solid $red;
     top: 35%;
-    right: 0;
+    right: -20px;
   }
 
   &__details[open] .person__name-inner::after {
@@ -49,4 +58,5 @@
     display: block;
     text-align: center;
   }
+
 }
