@@ -29,13 +29,13 @@ $(document).ready(function () {
   dropdowns.slideUp();
   buttons.click(function (e) {
     let currentButton = $(e.currentTarget);
-    if (currentButton.hasClass('.person__name_active')) {
+    if (currentButton.hasClass('person__name_active')) {
       dropdowns.slideUp();
-      buttons.removeClass('.person__name_active');
+      buttons.removeClass('person__name_active');
     } else {
       dropdowns.slideUp();
+      currentButton.addClass('person__name_active');
       currentButton.siblings('.person__info').slideDown();
-      currentButton.addClass('.person__name_active');
     }
   });
 });
