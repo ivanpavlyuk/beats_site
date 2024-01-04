@@ -1,4 +1,5 @@
 .team {
+
   &__container {
     max-width: 962px;
     padding: 76px 10px 24px;
@@ -19,15 +20,38 @@
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-
-    @include tablet {
-      flex-direction: column;
-      align-items: center;
-    }
-
   }
 
   &__item {
     flex-basis: 220px;
+    max-width: 222px;
+
+    @include phone {
+      max-width: 138px;
+    }
+  }
+}
+
+.team__list_mode_desktop {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.team__list_mode_mobile {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team__item {
+    flex-basis: 0;
+    flex-grow: 1;
   }
 }
