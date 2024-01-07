@@ -39,3 +39,9 @@ $(document).ready(function () {
     }
   });
 });
+
+// Слайдер на плагине slick
+$(document).ready(function () {
+  $('.slider').slick({
+  });
+});

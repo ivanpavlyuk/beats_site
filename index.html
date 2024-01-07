@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Наушники Beats Solo 3</title>
+  <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+  <!-- <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css"> -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -127,169 +129,155 @@
       <section class="section models" id="models">
         <div class="container models__container">
           <h2 class="visually-hidden">Модели Beats Solo 3</h2>
-          <article class="model models__item models__item_active">
-            <div class="model__img-container">
-              <img class="model__img" src="./img/headphones_big_2.jpg" alt="Beats Solo 3 цвет серебро" />
-              <button class="slider-button models__button models__button_left"
-                style="background-image: url(./img/icons/left.svg)"
-                onclick="document.querySelectorAll('.models__item').forEach(article => article.classList.toggle('models__item_active'))">
-                <span class="visually-hidden">Предыдущая модель</span>
-              </button>
-              <button class="slider-button models__button models__button_right"
-                style="background-image: url(./img/icons/right.svg)"
-                onclick="document.querySelectorAll('.models__item').forEach(article => article.classList.toggle('models__item_active'))">
-                <span class="visually-hidden">Следующая модель</span>
-              </button>
-            </div>
-            <div class="model__info">
-              <div class="properties model__properties">
-                <button class="properties__button">
-                  <span class="visually-hidden">Характеристики</span>
-                </button>
-                <dl class="properties__list">
-                  <div class="properties__item">
-                    <dt class="properties__name">
-                      <svg class="properties__icon">
-                        <use xlink:href=".\img\icons\sprite.svg#bluetooth"></use>
-                      </svg>Bluetooth
-                    </dt>
-                    <dd class="properties__value">4.0</dd>
-                  </div>
-                  <div class="properties__item">
-                    <dt class="properties__name">
-                      <svg class="properties__icon">
-                        <use xlink:href=".\img\icons\sprite.svg#road"></use>
-                      </svg>Дальность
-                    </dt>
-                    <dd class="properties__value">12 м</dd>
-                  </div>
-                  <div class="properties__item">
-                    <dt class="properties__name">
-                      <svg class="properties__icon">
-                        <use xlink:href=".\img\icons\sprite.svg#charger"></use>
-                      </svg>Зарядка
-                    </dt>
-                    <dd class="properties__value">3 ч</dd>
-                  </div>
-                  <div class="properties__item">
-                    <dt class="properties__name">
-                      <svg class="properties__icon">
-                        <use xlink:href=".\img\icons\sprite.svg#weight"></use>
-                      </svg>Вес
-                    </dt>
-                    <dd class="properties__value">215гр</dd>
-                  </div>
-                  <div class="properties__item">
-                    <dt class="properties__name">
-                      <svg class="properties__icon">
-                        <use xlink:href=".\img\icons\sprite.svg#warranty"></use>
-                      </svg>Гарантия
-                    </dt>
-                    <dd class="properties__value">1 год</dd>
-                  </div>
-                </dl>
-              </div>
-              <h3 class="title title_size_big model__title"> Beats solo 3. цвет «атласное серебро» </h3>
-              <div class="model__text"> Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и
-                поднесите к своему iPhone — они мгновенно подключатся к нему. </div>
-              <dl class="model__details-list">
-                <div class="model__details-item">
-                  <dt class="model__details-name">Зарядка</dt>
-                  <dd class="model__details-value"><b>2 часа</b></dd>
+          <div class="slider models__list">
+            <div class="slide">
+              <article class="model models__item">
+                <div class="model__img-container">
+                  <img class="model__img" src="./img/headphones_big_2.jpg" alt="Beats Solo 3 цвет серебро" />
                 </div>
-                <div class="model__details-item">
-                  <dt class="model__details-name">Вес</dt>
-                  <dd class="model__details-value"><b>215 грамм</b></dd>
+                <div class="model__info">
+                  <div class="properties model__properties">
+                    <button class="properties__button">
+                      <span class="visually-hidden">Характеристики</span>
+                    </button>
+                    <dl class="properties__list">
+                      <div class="properties__item">
+                        <dt class="properties__name">
+                          <svg class="properties__icon">
+                            <use xlink:href=".\img\icons\sprite.svg#bluetooth"></use>
+                          </svg>Bluetooth
+                        </dt>
+                        <dd class="properties__value">4.0</dd>
+                      </div>
+                      <div class="properties__item">
+                        <dt class="properties__name">
+                          <svg class="properties__icon">
+                            <use xlink:href=".\img\icons\sprite.svg#road"></use>
+                          </svg>Дальность
+                        </dt>
+                        <dd class="properties__value">12 м</dd>
+                      </div>
+                      <div class="properties__item">
+                        <dt class="properties__name">
+                          <svg class="properties__icon">
+                            <use xlink:href=".\img\icons\sprite.svg#charger"></use>
+                          </svg>Зарядка
+                        </dt>
+                        <dd class="properties__value">3 ч</dd>
+                      </div>
+                      <div class="properties__item">
+                        <dt class="properties__name">
+                          <svg class="properties__icon">
+                            <use xlink:href=".\img\icons\sprite.svg#weight"></use>
+                          </svg>Вес
+                        </dt>
+                        <dd class="properties__value">215гр</dd>
+                      </div>
+                      <div class="properties__item">
+                        <dt class="properties__name">
+                          <svg class="properties__icon">
+                            <use xlink:href=".\img\icons\sprite.svg#warranty"></use>
+                          </svg>Гарантия
+                        </dt>
+                        <dd class="properties__value">1 год</dd>
+                      </div>
+                    </dl>
+                  </div>
+                  <h3 class="title title_size_big model__title"> Beats solo 3. цвет «атласное серебро» </h3>
+                  <div class="model__text"> Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите
+                    их и поднесите к своему iPhone — они мгновенно подключатся к нему. </div>
+                  <dl class="model__details-list">
+                    <div class="model__details-item">
+                      <dt class="model__details-name">Зарядка</dt>
+                      <dd class="model__details-value"><b>2 часа</b></dd>
+                    </div>
+                    <div class="model__details-item">
+                      <dt class="model__details-name">Вес</dt>
+                      <dd class="model__details-value"><b>215 грамм</b></dd>
+                    </div>
+                  </dl>
+                  <div class="model__order">
+                    <b class="model__price">14 990 ₽</b>
+                    <a class="button button_bg_red model__button" href="#">Заказать</a>
+                  </div>
                 </div>
-              </dl>
-              <div class="model__order">
-                <b class="model__price">14 990 ₽</b>
-                <a class="button button_bg_red model__button" href="#">Заказать</a>
-              </div>
+              </article>
             </div>
-          </article>
-          <article class="model models__item">
-            <div class="model__img-container">
-              <img class="model__img" src="./img/headphones_big_2_red.jpg"
-                alt="beats solo pro. цвет «красный цитрус»" />
-              <button class="slider-button models__button models__button_left"
-                style="background-image: url(./img/icons/left.svg)"
-                onclick="document.querySelectorAll('.models__item').forEach(article => article.classList.toggle('models__item_active'))">
-                <span class="visually-hidden">Предыдущая модель</span>
-              </button>
-              <button class="slider-button models__button models__button_right"
-                style="background-image: url(./img/icons/right.svg)"
-                onclick="document.querySelectorAll('.models__item').forEach(article => article.classList.toggle('models__item_active'))">
-                <span class="visually-hidden">Следующая модель</span>
-              </button>
-            </div>
-            <div class="model__info">
-              <div class="properties model__properties">
-                <button class="properties__button">
-                  <span class="visually-hidden">Характеристики</span>
-                </button>
-                <dl class="properties__list">
-                  <div class="properties__item">
-                    <dt class="properties__name">
-                      <svg class="properties__icon">
-                        <use xlink:href=".\img\icons\sprite.svg#bluetooth"></use>
-                      </svg>Bluetooth
-                    </dt>
-                    <dd class="properties__value">4.0</dd>
-                  </div>
-                  <div class="properties__item">
-                    <dt class="properties__name">
-                      <svg class="properties__icon">
-                        <use xlink:href=".\img\icons\sprite.svg#road"></use>
-                      </svg>Дальность
-                    </dt>
-                    <dd class="properties__value">12 м</dd>
-                  </div>
-                  <div class="properties__item">
-                    <dt class="properties__name">
-                      <svg class="properties__icon">
-                        <use xlink:href=".\img\icons\sprite.svg#charger"></use>
-                      </svg>Зарядка
-                    </dt>
-                    <dd class="properties__value">3 ч</dd>
-                  </div>
-                  <div class="properties__item">
-                    <dt class="properties__name">
-                      <svg class="properties__icon">
-                        <use xlink:href=".\img\icons\sprite.svg#weight"></use>
-                      </svg>Вес
-                    </dt>
-                    <dd class="properties__value">215гр</dd>
-                  </div>
-                  <div class="properties__item">
-                    <dt class="properties__name">
-                      <svg class="properties__icon">
-                        <use xlink:href=".\img\icons\sprite.svg#warranty"></use>
-                      </svg>Гарантия
-                    </dt>
-                    <dd class="properties__value">1 год</dd>
-                  </div>
-                </dl>
-              </div>
-              <h3 class="title title_size_big model__title"> Beats solo pro. цвет «красный цитрус» </h3>
-              <div class="model__text"> Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого
-                предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим. </div>
-              <dl class="model__details-list">
-                <div class="model__details-item">
-                  <dt class="model__details-name">Зарядка</dt>
-                  <dd class="model__details-value"><b>2 часа</b></dd>
+            <div class="slide">
+              <article class="model models__item">
+                <div class="model__img-container">
+                  <img class="model__img" src="./img/headphones_big_2_red.jpg"
+                    alt="beats solo pro. цвет «красный цитрус»" />
                 </div>
-                <div class="model__details-item">
-                  <dt class="model__details-name">Вес</dt>
-                  <dd class="model__details-value"><b>215 грамм</b></dd>
+                <div class="model__info">
+                  <div class="properties model__properties">
+                    <button class="properties__button">
+                      <span class="visually-hidden">Характеристики</span>
+                    </button>
+                    <dl class="properties__list">
+                      <div class="properties__item">
+                        <dt class="properties__name">
+                          <svg class="properties__icon">
+                            <use xlink:href=".\img\icons\sprite.svg#bluetooth"></use>
+                          </svg>Bluetooth
+                        </dt>
+                        <dd class="properties__value">4.0</dd>
+                      </div>
+                      <div class="properties__item">
+                        <dt class="properties__name">
+                          <svg class="properties__icon">
+                            <use xlink:href=".\img\icons\sprite.svg#road"></use>
+                          </svg>Дальность
+                        </dt>
+                        <dd class="properties__value">12 м</dd>
+                      </div>
+                      <div class="properties__item">
+                        <dt class="properties__name">
+                          <svg class="properties__icon">
+                            <use xlink:href=".\img\icons\sprite.svg#charger"></use>
+                          </svg>Зарядка
+                        </dt>
+                        <dd class="properties__value">3 ч</dd>
+                      </div>
+                      <div class="properties__item">
+                        <dt class="properties__name">
+                          <svg class="properties__icon">
+                            <use xlink:href=".\img\icons\sprite.svg#weight"></use>
+                          </svg>Вес
+                        </dt>
+                        <dd class="properties__value">215гр</dd>
+                      </div>
+                      <div class="properties__item">
+                        <dt class="properties__name">
+                          <svg class="properties__icon">
+                            <use xlink:href=".\img\icons\sprite.svg#warranty"></use>
+                          </svg>Гарантия
+                        </dt>
+                        <dd class="properties__value">1 год</dd>
+                      </div>
+                    </dl>
+                  </div>
+                  <h3 class="title title_size_big model__title"> Beats solo pro. цвет «красный цитрус» </h3>
+                  <div class="model__text"> Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого
+                    предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим. </div>
+                  <dl class="model__details-list">
+                    <div class="model__details-item">
+                      <dt class="model__details-name">Зарядка</dt>
+                      <dd class="model__details-value"><b>2 часа</b></dd>
+                    </div>
+                    <div class="model__details-item">
+                      <dt class="model__details-name">Вес</dt>
+                      <dd class="model__details-value"><b>215 грамм</b></dd>
+                    </div>
+                  </dl>
+                  <div class="model__order">
+                    <b class="model__price">14 990 ₽</b>
+                    <a class="button button_bg_red model__button" href="#">Заказать</a>
+                  </div>
                 </div>
-              </dl>
-              <div class="model__order">
-                <b class="model__price">14 990 ₽</b>
-                <a class="button button_bg_red model__button" href="#">Заказать</a>
-              </div>
+              </article>
             </div>
-          </article>
+          </div>
         </div>
       </section>
       <section class="section team" id="team">
@@ -693,6 +681,7 @@
     </nav>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./slick-1.8.1/slick/slick.min.js"></script>
   <script src="./script.js"></script>
 </body>
 

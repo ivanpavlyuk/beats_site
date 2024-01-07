@@ -1138,9 +1138,6 @@ a {
   }
 }
 .models__item {
-  display: none;
-}
-.models__item_active {
   display: flex;
 }
 @media (max-width: 768px) {

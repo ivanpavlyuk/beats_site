@@ -11,12 +11,14 @@
     flex-direction: column;
     justify-content: center;
   }
+
   &__button {
     position: absolute;
 
     &_left {
       top: calc(50% - 2rem);
       left: 1rem;
+
       @include tablet {
         left: -1rem;
       }
@@ -25,6 +27,7 @@
     &_right {
       top: calc(50% - 2rem);
       right: 1rem;
+
       @include tablet {
         right: -1rem;
       }
@@ -32,16 +35,15 @@
   }
 
   &__item {
-    display: none;
-    &_active {
-      display: flex;
-    }
+    display: flex;
+
     @include tablet {
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
   }
+
   &__container::after {
     content: "";
     display: block;
