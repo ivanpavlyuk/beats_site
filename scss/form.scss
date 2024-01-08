@@ -2,11 +2,13 @@
   display: flex;
   justify-content: center;
   gap: 2.7rem;
+
   @include tablet {
     flex-direction: column;
     max-width: 65%;
     gap: 0;
   }
+
   @include phone {
     flex-direction: column;
     max-width: 100%;
@@ -23,12 +25,13 @@
     padding: 1.8rem 1.2rem 2rem;
     resize: none;
     width: 100%;
+
     @include tablet {
       padding: 0.8rem 1rem;
     }
   }
 
-  &__input:focus {
+  &__input-error {
     outline: 3px solid $red;
   }
 
@@ -48,6 +51,7 @@
     align-items: flex-start;
     flex: 1;
   }
+
   &__text {
     @include body2regular;
     margin-bottom: 0.6rem;
@@ -58,6 +62,7 @@
 
   &__textarea-row {
     margin-bottom: 4.2rem;
+
     @include tablet {
       margin-bottom: 3rem;
     }
@@ -72,16 +77,20 @@
 
   &__radio-row {
     gap: 2.5rem;
+
     @include phone {
       display: flex;
       justify-content: center;
     }
   }
+
   &__radio-row label {
     flex: initial;
   }
+
   &__checkbox-row &__label {
     margin-bottom: 30px;
+
     @include phone {
       align-items: center;
       margin-bottom: 0;
@@ -90,7 +99,8 @@
 
   &__radio {
     display: none;
-    & + .form__text::before {
+
+    &+.form__text::before {
       content: "";
       display: block;
       border: 1.2rem solid white;
@@ -98,7 +108,8 @@
       border-radius: 50%;
       margin-right: 1rem;
     }
-    &:checked + .form__text::before {
+
+    &:checked+.form__text::before {
       outline: 0.6rem solid white;
       outline-offset: -0.6rem;
       border-color: $red;
@@ -107,7 +118,8 @@
 
   &__checkbox {
     display: none;
-    & + .form__text::before {
+
+    &+.form__text::before {
       content: "";
       display: inline-block;
       width: 2.5rem;
@@ -117,13 +129,15 @@
       border-radius: 0.5rem;
       margin-right: 1rem;
     }
-    &:checked + .form__text::before {
+
+    &:checked+.form__text::before {
       background-image: url(../img/icons/checkmark_red.svg);
       background-size: 50%;
       background-position: center;
       background-repeat: no-repeat;
     }
   }
+
   &__button-row {
     @include tablet {
       display: flex;
@@ -131,15 +145,18 @@
       margin-top: 3rem;
     }
   }
+
   &__submit {
     border: none;
   }
+
   &__reset {
     @include body2regular;
     background-color: transparent;
     color: white;
     border: none;
     cursor: pointer;
+
     &:hover {
       color: $red;
     }

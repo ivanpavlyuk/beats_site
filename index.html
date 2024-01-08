@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Наушники Beats Solo 3</title>
   <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
-  <!-- <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -485,39 +485,40 @@
         <div class="container delivery__container">
           <h2 class="title title_size_biggest delivery__title"> Закажите доставку </h2>
           <form class="form delivery__form" action="#">
+            <input type="hidden" name="to" value="erfesf@gmail.com">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__label">
                   <span class="form__text">Имя</span>
-                  <input class="form__input" type="text" />
+                  <input class="form__input" type="text" name="name" />
                 </label>
                 <label class="form__label">
                   <span class="form__text">Телефон</span>
-                  <input class="form__input" type="text" />
+                  <input class="form__input" type="text" name="phone" />
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__label">
                   <span class="form__text">Улица</span>
-                  <input class="form__input" type="text" />
+                  <input class="form__input" type="text" name="street" />
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__label">
                   <span class="form__text">Дом</span>
-                  <input class="form__input" type="text" />
+                  <input class="form__input" type="text" name="house" />
                 </label>
                 <label class="form__label">
                   <span class="form__text">Корпус</span>
-                  <input class="form__input" type="text" />
+                  <input class="form__input" type="text" name="building" />
                 </label>
                 <label class="form__label">
                   <span class="form__text">Квартира</span>
-                  <input class="form__input" type="text" />
+                  <input class="form__input" type="text" name="appartment" />
                 </label>
                 <label class="form__label">
                   <span class="form__text">Этаж</span>
-                  <input class="form__input" type="text" />
+                  <input class="form__input" type="text" name="floor" />
                 </label>
               </div>
             </div>
@@ -525,7 +526,7 @@
               <div class="form__row form__textarea-row">
                 <label class="form__label">
                   <span class="form__text">Комментарий</span>
-                  <textarea class="form__input" rows="6"></textarea>
+                  <textarea class="form__input" rows="6" name="comment"></textarea>
                 </label>
               </div>
               <div class="form__row form__radio-row">
@@ -551,9 +552,11 @@
             </div>
           </form>
         </div>
-        <div class="delivery__popup">
-          <span class="delivery__message">Сообщение отправлено</span>
-          <button class="button button_bg_red delivery__button"> Закрыть </button>
+        <div class="modal delivery__modal" id="modal">
+          <div class="delivery__popup">
+            <span class="delivery__message">Сообщение отправлено</span>
+            <button class="button button_bg_red delivery__button"> Закрыть </button>
+          </div>
         </div>
       </section>
       <section class="section map" style="
@@ -670,6 +673,7 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="./slick-1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="./script.js"></script>
 </body>
 
