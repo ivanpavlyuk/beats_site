@@ -108,6 +108,7 @@ $('.form').submit(function (e) {
           src: '#modal',
           type: 'inline'
         }]);
+        message.css('color', 'black');
       }
     });
 
