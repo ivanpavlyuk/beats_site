@@ -82,6 +82,7 @@ $('.form').submit(function (e) {
 
   const modal = $('#modal');
   const message = modal.find('.delivery__message');
+  message.css('color', 'black');
 
   if (form.find('.form__input-error').length === 0) {
     $.ajax({
@@ -108,7 +109,7 @@ $('.form').submit(function (e) {
           src: '#modal',
           type: 'inline'
         }]);
-        message.css('color', 'black');
+
       }
     });
 
