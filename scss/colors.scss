@@ -1,11 +1,11 @@
 .colors {
   color: #fff;
+  overflow: hidden;
 
   &__container {
     background-image: url(../img/Slider.jpg);
     height: 652px;
     position: relative;
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,9 +15,15 @@
     position: absolute;
     top: 115px;
     left: 84px;
+    z-index: 1;
+
+    @include phone {
+      font-size: 3.2rem;
+    }
   }
 
   &__list {
+    z-index: 2;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -25,22 +31,12 @@
 
   &__item {
     display: flex;
-    margin-right: -524px;
-    transition: margin 0.5s ease-in-out;
   }
-  &__item:hover {
-    margin-right: 0;
-  }
-  &__item:hover .colors__content {
-    z-index: 0;
-    transition: z-index 0s;
-  }
-  &__item:hover .colors__item-title::after {
-    background-color: transparent;
-    transition: all 0s;
-  }
+
   &__item-title {
     position: relative;
+    border: none;
+    color: #fff;
     width: 102px;
     text-indent: 34px;
     display: flex;
@@ -52,15 +48,11 @@
     line-height: 1.2;
     transform: rotate(180deg);
     text-align: right;
-  }
-  &__item-title:after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100%;
-    left: -100px;
-    background-color: #333537e5;
-    transition: all 0.4s ease-in;
+    cursor: pointer;
+
+    @include phone {
+      width: 90px;
+    }
   }
 
   &__item:nth-of-type(3) .colors__item-title:after {
@@ -70,18 +62,27 @@
   &__item:nth-of-type(1) .colors__item-title {
     background-color: #999999;
   }
+
   &__item:nth-of-type(2) .colors__item-title {
     background-color: #151515;
   }
+
   &__item:nth-of-type(3) .colors__item-title {
     background-color: #e01f3c;
   }
 
-  &__content {
-    padding: 31px 53px 20px 38px;
-    width: 524px;
-    z-index: -5;
+  &__item-content {
+    width: 0;
+    overflow: hidden;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
     background-color: #333537e5;
-    transition: z-index 0s 0.35s ease-out;
+    transition: .5s ease-out;
+  }
+
+  &__item-text {
+    width: 524px;
+    padding: 3.8rem;
   }
 }

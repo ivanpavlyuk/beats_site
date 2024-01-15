@@ -1356,12 +1356,12 @@ a {
 
 .colors {
   color: #fff;
+  overflow: hidden;
 }
 .colors__container {
   background-image: url(../img/Slider.jpg);
   height: 652px;
   position: relative;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1370,30 +1370,26 @@ a {
   position: absolute;
   top: 115px;
   left: 84px;
+  z-index: 1;
+}
+@media (max-width: 480px) {
+  .colors__title {
+    font-size: 3.2rem;
+  }
 }
 .colors__list {
+  z-index: 2;
   height: 100%;
   display: flex;
   justify-content: flex-end;
 }
 .colors__item {
   display: flex;
-  margin-right: -524px;
-  transition: margin 0.5s ease-in-out;
-}
-.colors__item:hover {
-  margin-right: 0;
-}
-.colors__item:hover .colors__content {
-  z-index: 0;
-  transition: z-index 0s;
-}
-.colors__item:hover .colors__item-title::after {
-  background-color: transparent;
-  transition: all 0s;
 }
 .colors__item-title {
   position: relative;
+  border: none;
+  color: #fff;
   width: 102px;
   text-indent: 34px;
   display: flex;
@@ -1405,15 +1401,12 @@ a {
   line-height: 1.2;
   transform: rotate(180deg);
   text-align: right;
+  cursor: pointer;
 }
-.colors__item-title:after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100%;
-  left: -100px;
-  background-color: rgba(51, 53, 55, 0.8980392157);
-  transition: all 0.4s ease-in;
+@media (max-width: 480px) {
+  .colors__item-title {
+    width: 90px;
+  }
 }
 .colors__item:nth-of-type(3) .colors__item-title:after {
   background-color: transparent;
@@ -1427,12 +1420,18 @@ a {
 .colors__item:nth-of-type(3) .colors__item-title {
   background-color: #e01f3c;
 }
-.colors__content {
-  padding: 31px 53px 20px 38px;
-  width: 524px;
-  z-index: -5;
+.colors__item-content {
+  width: 0;
+  overflow: hidden;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
   background-color: rgba(51, 53, 55, 0.8980392157);
-  transition: z-index 0s 0.35s ease-out;
+  transition: 0.5s ease-out;
+}
+.colors__item-text {
+  width: 524px;
+  padding: 3.8rem;
 }
 
 .feedback {
