@@ -323,6 +323,7 @@ body {
   font-family: "Play", sans-serif;
   font-weight: 400;
   letter-spacing: 0px;
+  transition: 0.5s;
 }
 
 h1,
@@ -375,7 +376,7 @@ a {
 }
 
 .section {
-  flex-basis: 100vh;
+  height: 100vh;
 }
 
 .container {
@@ -1357,9 +1358,13 @@ a {
 .colors {
   color: #fff;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .colors__container {
   background-image: url(../img/Slider.jpg);
+  flex-basis: 100%;
   height: 652px;
   position: relative;
   display: flex;
@@ -1368,8 +1373,8 @@ a {
 }
 .colors__title {
   position: absolute;
-  top: 115px;
-  left: 84px;
+  top: 8%;
+  left: 8%;
   z-index: 1;
 }
 @media (max-width: 480px) {
