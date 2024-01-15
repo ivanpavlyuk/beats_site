@@ -80,3 +80,9 @@
     @content;
   }
 }
+
+@mixin small-phone {
+  @media (max-width: 380px) {
+    @content;
+  }
+}
