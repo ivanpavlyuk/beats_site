@@ -43,7 +43,7 @@
                     <a class="menu__link" href="#about">Как мы работаем</a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link" href="#contacts">Контакты</a>
+                    <a class="menu__link" href="#map">Контакты</a>
                   </li>
                 </ul>
               </nav>
@@ -458,12 +458,12 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section about" id="about">
+      <section class="section about" id="about">
         <div class="container about__container">
           <h2 class="title title_size_biggest about__title"> Как мы работаем </h2>
           <video class="about__video" controls width="662" height="392"></video>
         </div>
-      </section> -->
+      </section>
       <section class="section delivery" id="delivery">
         <div class="container delivery__container">
           <h2 class="title title_size_biggest delivery__title"> Закажите доставку </h2>
@@ -542,57 +542,51 @@
           </div>
         </div>
       </section>
-      <section class="section map" id='map' style="
-            min-height: 100vh;
-            background-image: url(./img/map.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-          ">
+      <section class="section map" id='map'>
         <h2 class="visually-hidden">Мы на карте</h2>
-      </section>
-      <footer class="footer" id="contacts">
-        <div class="container footer__container">
-          <div class="contacts footer__contacts">
-            <address class="footer__address"> Москва, ул.Новый Арбат, д.31/12 </address>
-            <div class="contacts__inner">
-              <svg class="contacts__icon">
-                <use xlink:href=".\img\icons\sprite.svg#phone"></use>
-              </svg>
-              <a class="contacts__phone" href="tel:+78009039090">8 800 903 90 90</a>
+        <footer class="footer" id="contacts">
+          <div class="container footer__container">
+            <div class="contacts footer__contacts">
+              <address class="footer__address"> Москва, ул.Новый Арбат, д.31/12 </address>
+              <div class="contacts__inner">
+                <svg class="contacts__icon">
+                  <use xlink:href=".\img\icons\sprite.svg#phone"></use>
+                </svg>
+                <a class="contacts__phone" href="tel:+78009039090">8 800 903 90 90</a>
+              </div>
             </div>
+            <ul class="socials footer__socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <span class="visually-hidden">Мы Вконтакте</span>
+                  <svg class="socials__icon">
+                    <use xlink:href=".\img\icons\sprite.svg#vk"></use>
+                  </svg></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span>
+                  <svg class="socials__icon">
+                    <use xlink:href=".\img\icons\sprite.svg#facebook"></use>
+                  </svg></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#"><span class="visually-hidden">Мы в Инстаграме</span>
+                  <svg class="socials__icon">
+                    <use xlink:href=".\img\icons\sprite.svg#insta"></use>
+                  </svg></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#"><span class="visually-hidden">Мы в Телеграме</span>
+                  <svg class="socials__icon">
+                    <use xlink:href=".\img\icons\sprite.svg#telegram"></use>
+                  </svg></a>
+              </li>
+            </ul>
           </div>
-          <ul class="socials footer__socials">
-            <li class="socials__item">
-              <a class="socials__link" href="#">
-                <span class="visually-hidden">Мы Вконтакте</span>
-                <svg class="socials__icon">
-                  <use xlink:href=".\img\icons\sprite.svg#vk"></use>
-                </svg></a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span>
-                <svg class="socials__icon">
-                  <use xlink:href=".\img\icons\sprite.svg#facebook"></use>
-                </svg></a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#"><span class="visually-hidden">Мы в Инстаграме</span>
-                <svg class="socials__icon">
-                  <use xlink:href=".\img\icons\sprite.svg#insta"></use>
-                </svg></a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#"><span class="visually-hidden">Мы в Телеграме</span>
-                <svg class="socials__icon">
-                  <use xlink:href=".\img\icons\sprite.svg#telegram"></use>
-                </svg></a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+        </footer>
+      </section>
       <ol class="fixed-paginator wrapper__fixed-paginator">
-        <li class="fixed-paginator__item fixed-paginator__item_active">
+        <li class="fixed-paginator__item">
           <a class="fixed-paginator__button fixed-paginator__button_active"></a>
         </li>
         <li class="fixed-paginator__item">
