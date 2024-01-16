@@ -12,6 +12,10 @@
       margin-bottom: 3rem;
       max-width: 41.4rem;
     }
+
+    @include small-phone {
+      margin-bottom: 1rem;
+    }
   }
 
   &__img {
@@ -45,6 +49,11 @@
     @include phone {
       max-width: 70%;
     }
+
+    @include small-phone {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
   }
 
   &__text {
@@ -60,6 +69,10 @@
 
     @include phone {
       max-width: 90%;
+    }
+
+    @include small-phone {
+      max-width: 100%;
     }
   }
 

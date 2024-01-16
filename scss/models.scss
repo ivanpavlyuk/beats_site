@@ -11,8 +11,9 @@
     flex-direction: column;
     justify-content: center;
 
-    @include small-phone {
-      padding-bottom: 4rem;
+    @include tablet {
+
+      padding: 1rem;
     }
   }
 

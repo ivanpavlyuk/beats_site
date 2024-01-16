@@ -93,6 +93,12 @@
         margin-bottom: 3rem;
       }
     }
+
+    @include small-phone {
+      & .advantage-card__text {
+        margin-bottom: 1rem;
+      }
+    }
   }
 
   &__item:not(&__item:last-of-type):after {
