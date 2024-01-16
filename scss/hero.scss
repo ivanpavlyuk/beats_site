@@ -14,11 +14,13 @@
     background-repeat: no-repeat;
     background-position: bottom 50% right 6%;
     background-size: 51%;
+
     @include tablet {
       background-position: top 10% right 50%;
       background-size: 45%;
       padding-bottom: 1rem;
     }
+
     @include phone {
       background-position: top 20% right 50%;
       background-size: 65%;
@@ -42,6 +44,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex-basis: 70%;
+
     @include tablet {
       flex-basis: 100vh;
     }
@@ -52,22 +55,27 @@
     justify-content: flex-start;
     align-items: baseline;
     padding: 0 1rem;
+
     @include tablet {
       justify-content: space-between;
     }
+
     @include phone {
       padding: 0;
     }
   }
+
   &__logo {
     width: 40px;
     height: 40px;
   }
+
   &__menu {
     @include tablet {
       display: none;
     }
   }
+
   &__contacts {
     @include tablet {
       display: none;
@@ -76,6 +84,7 @@
 
   &__content {
     align-self: start;
+
     @include tablet {
       align-self: center;
       align-items: center;
@@ -83,37 +92,45 @@
       margin-bottom: 12vh;
       gap: 2.5rem;
     }
+
     .content__title {
       @include tablet {
         max-width: 92%;
         margin-bottom: -2rem;
       }
+
       @include phone {
         max-width: 84%;
         margin-bottom: -2rem;
       }
     }
+
     .content__text {
       @include tablet {
         max-width: 50%;
       }
+
       @include phone {
         max-width: 80%;
       }
     }
   }
-  &__logo {
+
+  &__logo-link {
     margin-right: 4rem;
     align-self: start;
   }
+
   &__menu {
     margin-top: 0.5rem;
     margin-right: 2rem;
   }
+
   &__burger {
     width: 26px;
     align-self: center;
   }
+
   &__details {
     @include tablet {
       display: none;

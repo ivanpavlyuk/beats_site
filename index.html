@@ -17,9 +17,11 @@
         <div class="container hero__container">
           <div class="hero__inner">
             <header class="hero__header">
-              <svg class="logo hero__logo">
-                <use xlink:href=".\img\icons\sprite.svg#logo"></use>
-              </svg>
+              <a class="hero__logo-link">
+                <svg class="logo hero__logo">
+                  <use xlink:href=".\img\icons\sprite.svg#logo"></use>
+                </svg>
+              </a>
               <nav class="menu hero__menu">
                 <ul class="menu__list">
                   <li class="menu__item">
@@ -462,7 +464,7 @@
           <video class="about__video" controls width="662" height="392"></video>
         </div>
       </section> -->
-      <section class="section delivery">
+      <section class="section delivery" id="delivery">
         <div class="container delivery__container">
           <h2 class="title title_size_biggest delivery__title"> Закажите доставку </h2>
           <form class="form delivery__form" action="#">
@@ -540,7 +542,7 @@
           </div>
         </div>
       </section>
-      <section class="section map" style="
+      <section class="section map" id='map' style="
             min-height: 100vh;
             background-image: url(./img/map.jpg);
             background-repeat: no-repeat;

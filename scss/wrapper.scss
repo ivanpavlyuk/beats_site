@@ -1,15 +1,13 @@
 .wrapper {
   height: 100%;
   width: 100%;
-  // overflow: hidden;
+  overflow: hidden;
 
   &__main-content {
     color: $black;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     transition: .5s;
-
   }
 
   & &__fixed-paginator {

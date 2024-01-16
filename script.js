@@ -197,3 +197,23 @@ showAccordeon();
 
 // Прокрутка страницы
 
+window.addEventListener('load', e => {
+
+  const page = document.querySelector('.wrapper__main-content');
+
+  const sections = ['hero', 'advantages', 'models', 'team', 'colors', 'feedbacks', 'delivery', 'map', 'contacts'];
+  let counter = 0;
+  window.location.hash = "#" + sections[counter];
+
+  window.addEventListener('wheel', e => {
+    if (counter >= 0 && counter < sections.length) {
+      if (e.deltaY < 0) {
+        counter = counter > 0 ? --counter : counter;
+        page.style.marginTop = -100 * counter + 'vh';
+      } else {
+        counter = counter === sections.length - 1 ? counter : ++counter;
+        page.style.marginTop = -100 * counter + 'vh';
+      }
+    }
+  })
+})
