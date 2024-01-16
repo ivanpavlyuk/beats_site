@@ -217,3 +217,31 @@ window.addEventListener('load', e => {
     }
   })
 })
+
+// Скролл для телефонов
+window.addEventListener('load', () => {
+  const page = document.querySelector('.wrapper__main-content');
+  const sections = ['hero', 'advantages', 'models', 'team', 'colors', 'feedbacks', 'delivery', 'map', 'contacts'];
+  let counter = 0;
+  window.location.hash = "#" + sections[counter];
+
+  let startY = 0;
+
+  window.addEventListener('touchstart', (e) => {
+    startY = e.touches[0].clientY;
+  });
+
+  window.addEventListener('touchmove', (e) => {
+    const deltaY = e.touches[0].clientY - startY;
+
+    if (deltaY > 50) { // You can adjust this threshold
+      counter = counter > 0 ? --counter : counter;
+      page.style.marginTop = -100 * counter + 'vh';
+      startY = e.touches[0].clientY;
+    } else if (deltaY < -50) { // You can adjust this threshold
+      counter = counter === sections.length - 1 ? counter : ++counter;
+      page.style.marginTop = -100 * counter + 'vh';
+      startY = e.touches[0].clientY;
+    }
+  });
+});
