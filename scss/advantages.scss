@@ -1,14 +1,20 @@
 .advantages {
   color: $black;
+
   &__container {
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     @include tablet {
       margin-top: 3rem;
+    }
+
+    @include small-phone {
+      margin-top: 2rem;
     }
   }
 
@@ -16,6 +22,7 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
+
     @include tablet {
       margin-bottom: 1.5rem;
     }
@@ -24,40 +31,50 @@
   &__text {
     @include body2regular;
     color: $grey;
-    max-width: 90%;
     padding: 0 4rem;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 6.2rem;
     max-width: 62%;
+
     @include tablet {
       margin-bottom: 5.2rem;
-      max-width: 90%;
+      max-width: 100%;
+
+    }
+
+    @include phone {
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+
     }
   }
 
   &__list {
     display: flex;
     justify-content: center;
+
     @include phone {
       flex-direction: column;
-      align-self: flex-start;
     }
   }
 
   &__item.advantage-card {
     padding: 0 4.1rem;
     position: relative;
+
     @include tablet {
       padding: 0;
 
       & .advantage-card__title {
         margin-bottom: 2rem;
       }
+
       & .advantage-card__text {
         padding: 0 0.7rem;
       }
     }
+
     @include phone {
       flex-direction: row;
       align-items: center;
@@ -69,6 +86,7 @@
         margin-left: 0.8rem;
         text-align: left;
       }
+
       & .advantage-card__text {
         text-align: left;
         max-width: 30.5rem;
@@ -88,10 +106,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     @include tablet {
       display: none;
     }
   }
+
   &__container::after {
     content: "";
     position: absolute;
@@ -103,8 +123,15 @@
     border-top: 17px solid transparent;
     border-bottom: 34px solid $red;
     z-index: 5;
+
     @include tablet {
+      bottom: 0;
       left: 4%;
+    }
+
+    @include small-phone {
+      bottom: -12px;
+      left: 0;
     }
   }
 }

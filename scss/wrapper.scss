@@ -1,15 +1,22 @@
 .wrapper {
+  height: 100%;
+  width: 100%;
+  // overflow: hidden;
+
   &__main-content {
     color: $black;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    transition: .5s;
+
   }
+
   & &__fixed-paginator {
     @include tablet {
       display: none;
     }
+
     position: fixed;
     z-index: 100;
     right: 1rem;

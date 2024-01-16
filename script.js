@@ -196,18 +196,4 @@ function showAccordeon() {
 showAccordeon();
 
 // Прокрутка страницы
-let init = 0;
-window.addEventListener('scroll', e => {
 
-  if (window.scrollY > init) {
-    document.body.style.marginTop = '-100vh';
-    init = window.scrollY;
-  }
-  console.log(init)
-
-  if (window.scrollY < init) {
-    document.body.style.marginTop = '0vh';
-    init = window.scrollY;
-  }
-
-})
