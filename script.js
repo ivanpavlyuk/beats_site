@@ -294,13 +294,13 @@ window.addEventListener('load', () => {
     if (deltaY > 100) { // You can adjust this threshold
       counter = counter > 0 ? --counter : counter;
       page.style.marginTop = -100 * counter + 'vh';
-      window.scrollTop = 100;
+      window.scrollDown = 100;
       startY = e.touches[0].clientY;
     } else if (deltaY < -100) { // You can adjust this threshold
       counter = counter === sections.length - 1 ? counter : ++counter;
       page.style.marginTop = -100 * counter + 'vh';
       startY = e.touches[0].clientY;
-      window.scrollTop = 100;
+      window.scrollDown = 100;
 
     }
   });
