@@ -294,11 +294,90 @@ window.addEventListener('load', () => {
     if (deltaY > 100) { // You can adjust this threshold
       counter = counter > 0 ? --counter : counter;
       page.style.marginTop = -100 * counter + 'vh';
+      window.scrollTop = 100;
       startY = e.touches[0].clientY;
     } else if (deltaY < -100) { // You can adjust this threshold
       counter = counter === sections.length - 1 ? counter : ++counter;
       page.style.marginTop = -100 * counter + 'vh';
       startY = e.touches[0].clientY;
+      window.scrollTop = 100;
+
     }
   });
 });
+
+// Плеер
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '360',
+    width: '640',
+    videoId: 'M7lc1UVf-VE',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
+
+// 5. The API calls this function when the player's state changes.
+//    The function indicates that when playing a video (state=1),
+//    the player should play for six seconds and then stop.
+var done = false;
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.PLAYING && !done) {
+    setTimeout(stopVideo, 6000);
+    done = true;
+  }
+}
+function stopVideo() {
+  player.stopVideo();
+}
+
+// Карта
+let myMap;
+const init = () => {
+  myMap = new ymaps.Map("map", {
+    center: [59.93916998692174, 30.309015096732622],
+    zoom: 11,
+    controls: [],
+  });
+
+  let coords = [
+    [59.94554327989287, 30.38935262114668],
+    [59.91142323563909, 30.50024587065841],
+    [59.88693161784606, 30.319658102103713],
+    [59.97033574821672, 30.315194906302924],
+  ],
+    myCollection = new ymaps.GeoObjectCollection({}, {
+      draggable: false,
+      iconLayout: 'default#image',
+      iconImageHref: './img/icons/marker.svg',
+      iconImageSize: [46, 57],
+      iconImageOffset: [-35, -52]
+    });
+
+  for (let i = 0; i < coords.length; i++) {
+    myCollection.add(new ymaps.Placemark(coords[i]));
+  }
+
+  myMap.geoObjects.add(myCollection);
+
+  myMap.behaviors.disable('scrollZoom');
+};
+
+ymaps.ready(init);
