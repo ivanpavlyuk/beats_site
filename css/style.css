@@ -1436,6 +1436,11 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 480px) {
+  .colors__container {
+    height: 100vh;
+  }
+}
 .colors__title {
   position: absolute;
   top: 8%;
@@ -1579,7 +1584,6 @@ a {
 @media (max-width: 480px) {
   .feedbacks__container {
     padding: 1rem 0;
-    justify-content: space-between;
   }
 }
 .feedbacks__title {
