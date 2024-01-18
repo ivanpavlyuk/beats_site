@@ -37,10 +37,14 @@
     gap: 5%;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -10%;
     background-color: black;
     height: 10%;
     width: 100%;
+
+    @include phone {
+      height: 20%;
+    }
 
     &-play {
       height: 50%;
@@ -87,6 +91,7 @@
       height: 50%;
       width: 3%;
       background-image: url(../img/icons/volume_sign.svg);
+      background-position: center;
       background-color: transparent;
       background-size: contain;
       background-repeat: no-repeat;

@@ -15,5 +15,10 @@
   &_bg_red {
     background-color: $red;
     color: #fff;
+
+    &:hover {
+      background-color: #CA1B36;
+
+    }
   }
 }

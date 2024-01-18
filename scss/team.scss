@@ -25,6 +25,7 @@
   &__item {
     flex-basis: 220px;
     max-width: 222px;
+    user-select: none;
 
     @include phone {
       max-width: 138px;
@@ -34,6 +35,7 @@
 
 .team__list_mode_desktop {
   display: none;
+  min-height: 450px;
 
   @include desktop {
     display: flex;
@@ -42,6 +44,7 @@
 
 .team__list_mode_mobile {
   display: none;
+  margin-bottom: 20px;
 
   @include tablet {
     display: flex;

@@ -63,6 +63,7 @@
     cursor: pointer;
 
     @include phone {
+      padding-top: 20px;
       width: 90px;
     }
 

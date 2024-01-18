@@ -703,6 +703,9 @@ a {
   background-color: #e01f3d;
   color: #fff;
 }
+.button_bg_red:hover {
+  background-color: #CA1B36;
+}
 
 .hero {
   background-color: #f5f5f5;
@@ -1323,6 +1326,7 @@ a {
 .team__item {
   flex-basis: 220px;
   max-width: 222px;
+  user-select: none;
 }
 @media (max-width: 480px) {
   .team__item {
@@ -1332,6 +1336,7 @@ a {
 
 .team__list_mode_desktop {
   display: none;
+  min-height: 450px;
 }
 @media (min-width: 768.1px) {
   .team__list_mode_desktop {
@@ -1341,6 +1346,7 @@ a {
 
 .team__list_mode_mobile {
   display: none;
+  margin-bottom: 20px;
 }
 @media (max-width: 768px) {
   .team__list_mode_mobile {
@@ -1485,6 +1491,7 @@ a {
 }
 @media (max-width: 480px) {
   .colors__item-title {
+    padding-top: 20px;
     width: 90px;
   }
 }
@@ -2086,10 +2093,15 @@ a {
   gap: 5%;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -10%;
   background-color: black;
   height: 10%;
   width: 100%;
+}
+@media (max-width: 480px) {
+  .player__controls {
+    height: 20%;
+  }
 }
 .player__controls-play {
   height: 50%;
@@ -2131,6 +2143,7 @@ a {
   height: 50%;
   width: 3%;
   background-image: url(../img/icons/volume_sign.svg);
+  background-position: center;
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;

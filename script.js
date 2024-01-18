@@ -298,7 +298,6 @@ window.addEventListener('load', () => {
       counter = counter === sections.length - 1 ? counter : ++counter;
       page.style.marginTop = -100 * counter + 'vh';
       startY = e.touches[0].clientY;
-
     }
   });
 });
