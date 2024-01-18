@@ -10,11 +10,13 @@
     padding-top: 60px;
     padding-bottom: 108px;
   }
+
   &__title {
     color: $black;
     text-align: center;
     margin-bottom: 44px;
   }
+
   &__container::before {
     content: "";
     position: absolute;
@@ -26,5 +28,22 @@
     transform: rotate(-15deg);
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     z-index: 5;
+  }
+
+  &__player {
+    max-width: calc(100vw - 20px);
+    width: 662px;
+    height: 392px;
+
+    @include tablet {
+      width: 594px;
+      height: 350px;
+    }
+
+    @include phone {
+      width: 394px;
+      height: 235px;
+    }
+
   }
 }

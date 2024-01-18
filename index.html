@@ -13,7 +13,7 @@
 <body>
   <div class="wrapper">
     <div class="wrapper__main-content">
-      <section class="section hero" id="hero">
+      <!-- <section class="section hero" id="hero">
         <div class="container hero__container">
           <div class="hero__inner">
             <header class="hero__header">
@@ -457,14 +457,29 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <section class="section about" id="about">
         <div class="container about__container">
           <h2 class="title title_size_biggest about__title"> Как мы работаем </h2>
-          <video width="600" height="400" src="https://youtu.be/wLkGC5dcpU8"></video>
+          <div class="about__player player">
+            <button class="player__play"></button>
+            <video class="player__video" src="./video/unboxing-beats.mp4"></video>
+            <div class="player__controls">
+              <button class="player__controls-play"></button>
+              <div class="player__controls-bar">
+                <span class="player__controls-previous"></span>
+                <input class="player__controls-progress" type="range" min="0" max="100" value="0" disabled></input>
+              </div>
+              <button class="player__controls-mute"></button>
+              <div class="player__controls-volume">
+                <span class="player__controls-previous"></span>
+                <input class="player__controls-progress" type="range" min="1" max="10" value="5"></input>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="section delivery" id="delivery">
+      <!-- <section class="section delivery" id="delivery">
         <div class="container delivery__container">
           <h2 class="title title_size_biggest delivery__title"> Закажите доставку </h2>
           <form class="form delivery__form" action="#">
@@ -648,12 +663,12 @@
         </li>
       </ul>
     </nav>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="./slick-1.8.1/slick/slick.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script src="./script.js"></script>
+  </div> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="./slick-1.8.1/slick/slick.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="./script.js"></script>
 </body>
 
 </html>

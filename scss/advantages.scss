@@ -13,8 +13,8 @@
       margin-top: 3rem;
     }
 
-    @include small-phone {
-      margin-top: 2rem;
+    @include phone {
+      margin-top: 1rem;
     }
   }
 
