@@ -1,0 +1,33 @@
+.contacts {
+  font-family: Play;
+  font-size: 18px;
+  line-height: 1;
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+
+    & use {
+      fill: $black;
+
+      @include tablet {
+        fill: $red;
+      }
+
+      @include phone {
+        fill: $black;
+      }
+    }
+  }
+}

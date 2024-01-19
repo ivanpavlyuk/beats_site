@@ -1,0 +1,34 @@
+.feedback {
+  background-color: #f8faf9;
+  padding: 42px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 38px;
+
+  &__img {
+    width: 253px;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__title {
+    @include headline3;
+  }
+
+  &__text {
+    @include body2regular;
+    max-width: 93%;
+    color: $grey;
+  }
+
+  &__author {
+    @include body2bold;
+  }
+}

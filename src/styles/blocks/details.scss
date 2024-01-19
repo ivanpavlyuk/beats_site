@@ -1,0 +1,26 @@
+.details {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  &__item {
+    max-width: 166px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.15;
+    gap: 5px;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+
+  }
+
+  &__item-text {
+    width: 166px;
+  }
+}

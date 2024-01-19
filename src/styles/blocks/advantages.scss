@@ -1,0 +1,143 @@
+.advantages {
+  color: $black;
+
+  &__container {
+    padding: 0 10px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
+    @include phone {
+      margin-top: 10px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    @include body2regular;
+    color: $grey;
+    padding: 0 40px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 62px;
+    max-width: 62%;
+
+    @include tablet {
+      margin-bottom: 52px;
+      max-width: 100%;
+
+    }
+
+    @include phone {
+      margin-bottom: 20px;
+      padding: 0 10px;
+
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    @include phone {
+      flex-direction: column;
+    }
+  }
+
+  &__item.advantage-card {
+    padding: 0 41px;
+    position: relative;
+
+    @include tablet {
+      padding: 0;
+
+      & .advantage-card__title {
+        margin-bottom: 20px;
+      }
+
+      & .advantage-card__text {
+        padding: 0 7px;
+      }
+    }
+
+    @include phone {
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+      gap: 10px;
+
+      & .advantage-card__title {
+        margin-bottom: 5px;
+        margin-left: 8px;
+        text-align: left;
+      }
+
+      & .advantage-card__text {
+        text-align: left;
+        max-width: 305px;
+        margin-bottom: 30px;
+      }
+    }
+
+    @include small-phone {
+      & .advantage-card__text {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__item:not(&__item:last-of-type):after {
+    content: "";
+    width: 67px;
+    height: 21px;
+    position: absolute;
+    top: 60px;
+    right: -35px;
+    background-image: url(./images/Combined_shape.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__container::after {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    transform: rotate(226deg);
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 17px solid transparent;
+    border-bottom: 34px solid $red;
+    z-index: 5;
+
+    @include tablet {
+      bottom: 0;
+      left: 4%;
+    }
+
+    @include small-phone {
+      bottom: -12px;
+      left: 0;
+    }
+  }
+}

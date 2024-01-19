@@ -1,0 +1,17 @@
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  gap: 5px;
+  cursor: pointer;
+  @include tablet {
+    display: flex;
+  }
+  &__bar {
+    background-color: $black;
+    padding: 2px;
+    border-radius: 5px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 30px;
+
+  &__title {
+    max-width: 47%;
+    line-height: 1.08;
+  }
+
+  &__text {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+    max-width: 35%;
+  }
+}

@@ -1,0 +1,24 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  &__main-content {
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+  }
+
+  & &__fixed-paginator {
+    @include tablet {
+      display: none;
+    }
+
+    position: fixed;
+    z-index: 100;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-65%);
+  }
+}

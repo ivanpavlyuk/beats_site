@@ -1,0 +1,88 @@
+@mixin headline1 {
+  font-family: Play;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+@mixin headline2 {
+  font-family: Play;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+@mixin headline3 {
+  font-family: Play;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+@mixin body2bold {
+  font-family: Play;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+@mixin body2semibold {
+  font-family: Play;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+@mixin body2regular {
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+@mixin body1semibold {
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@mixin body1regular {
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@mixin body1light {
+  font-family: Play;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+@mixin desktop {
+  @media (min-width: 768.1px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin small-phone {
+  @media (max-width: 420px) {
+    @content;
+  }
+}

@@ -1,0 +1,64 @@
+.models {
+  background-color: #f8faf9;
+
+  &__container {
+    position: relative;
+    max-width: 1010px;
+    padding: 0 10px;
+    padding-top: 66px;
+    padding-bottom: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+
+      padding: 10px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+
+    &_left {
+      top: calc(50% - 20px);
+      left: 10px;
+
+      @include tablet {
+        left: -10px;
+      }
+    }
+
+    &_right {
+      top: calc(50% - 20px);
+      right: 10px;
+
+      @include tablet {
+        right: -10px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    @include tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__container::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: $black;
+    position: absolute;
+    bottom: -17px;
+    right: 3%;
+    transform: rotate(30deg);
+    z-index: 5;
+  }
+}

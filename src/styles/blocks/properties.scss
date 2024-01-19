@@ -1,0 +1,67 @@
+.properties {
+  position: relative;
+  width: 364px;
+  @include body1semibold;
+  color: #000;
+
+  @include tablet {
+    display: none;
+  }
+
+  &__button {
+    width: 91px;
+    height: 91px;
+    background-color: #9a9a9a;
+    background-image: url(./images/gear1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 46%;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    &:hover+.properties__list {
+      visibility: visible;
+    }
+  }
+
+  &__list {
+    visibility: hidden;
+    width: calc(100% - 91px);
+    padding: 18px 13px 24px 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffffef;
+    box-shadow: 4px 4px 40px 0px #0000000f;
+
+    &:hover {
+      visibility: visible;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+
+    use {
+      fill: $black;
+    }
+  }
+
+  &__name {
+    display: flex;
+  }
+
+  &__value {
+    margin-left: auto;
+  }
+}

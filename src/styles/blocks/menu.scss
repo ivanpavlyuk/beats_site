@@ -1,0 +1,28 @@
+.menu {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.66;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item:not(.nav__item:last-of-type) {
+    margin-right: 27px;
+  }
+}
+
+.menu_vertical {
+  margin-top: 15%;
+  color: $white;
+
+  .menu__list {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 36px;
+    line-height: 72px;
+  }
+}
