@@ -20,14 +20,14 @@ window.addEventListener('load', e => {
 
   function scroll(index) {
     counter = index;
-    page.style.marginTop = -100 * counter + 'vh';
+    page.style.transform = 'translateY(' + (-100 * counter) + '%)';
     makePaginationActive(counter);
   }
 
   function scrollUp() {
     if (validateCounter()) {
       counter = counter > 0 ? --counter : counter;
-      page.style.marginTop = -100 * counter + 'vh';
+      page.style.transform = 'translateY(' + (-100 * counter) + '%)';
       makePaginationActive(counter);
     }
   }
@@ -35,7 +35,7 @@ window.addEventListener('load', e => {
   function scrollDown() {
     if (validateCounter()) {
       counter = counter === sections.length - 1 ? counter : ++counter;
-      page.style.marginTop = -100 * counter + 'vh';
+      page.style.transform = 'translateY(' + (-100 * counter) + '%)';
       makePaginationActive(counter);
     }
   }
