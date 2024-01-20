@@ -47,7 +47,6 @@ task('styles', () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(pxToRem())
     .pipe(gulpif(env === 'prod', autoprefixer()))
-    // .pipe(gulpif(env === 'prod', gcmq()))
     .pipe(gulpif(env === 'prod', cleanCSS()))
     .pipe(gulpif(env === 'dev', sourcemaps.write()))
     .pipe(dest(DIST_PATH))

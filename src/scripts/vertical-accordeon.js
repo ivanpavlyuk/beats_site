@@ -10,6 +10,7 @@ $(document).ready(function () {
       buttons.removeClass('person__name_active');
     } else {
       dropdowns.slideUp();
+      buttons.removeClass('person__name_active');
       currentButton.addClass('person__name_active');
       currentButton.siblings('.person__info').slideDown();
     }
