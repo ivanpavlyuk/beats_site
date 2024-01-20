@@ -46,24 +46,28 @@
   }
 
   &__item-title {
-    position: relative;
     border: none;
     color: #fff;
     width: 102px;
-    text-indent: 34px;
-    display: flex;
-    align-items: center;
-    writing-mode: vertical-lr;
     font-family: Alegreya Sans;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
-    transform: rotate(180deg);
-    text-align: right;
     cursor: pointer;
+    text-align: center;
+
+    &-text {
+      writing-mode: vertical-rl;
+      text-wrap: nowrap;
+      transform: rotate(180deg);
+      margin-bottom: -250px;
+
+      @include phone {
+        margin-bottom: -150px;
+      }
+    }
 
     @include phone {
-      padding-top: 20px;
       width: 90px;
     }
 
