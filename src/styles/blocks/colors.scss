@@ -101,17 +101,16 @@
     background-color: #333537e5;
     transition: .5s ease-out;
 
-    @include small-phone {
+    @include tablet {
       font-size: 14px;
     }
   }
 
   &__item-text {
-    width: 524px;
-    padding: 38px;
+    padding: 35px;
 
-    @include small-phone {
-      padding: 10px;
+    @include phone {
+      padding: 30px 10px;
     }
   }
 }

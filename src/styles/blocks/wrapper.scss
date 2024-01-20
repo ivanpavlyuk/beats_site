@@ -5,9 +5,8 @@
 
   &__main-content {
     color: $black;
-    display: flex;
-    flex-direction: column;
     transition: .5s;
+    height: 100%;
   }
 
   & &__fixed-paginator {

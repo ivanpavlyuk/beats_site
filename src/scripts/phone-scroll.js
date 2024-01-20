@@ -14,11 +14,11 @@ window.addEventListener('load', () => {
 
     if (deltaY > 100) {
       counter = counter > 0 ? --counter : counter;
-      page.style.marginTop = -100 * counter + 'vh';
+      page.style.transform = 'translateY(' + (-100 * counter) + '%)';
       startY = e.touches[0].clientY;
     } else if (deltaY < -100) {
       counter = counter === sections.length - 1 ? counter : ++counter;
-      page.style.marginTop = -100 * counter + 'vh';
+      page.style.transform = 'translateY(' + (-100 * counter) + '%)';
       startY = e.touches[0].clientY;
     }
   });

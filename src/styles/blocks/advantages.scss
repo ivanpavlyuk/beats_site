@@ -2,20 +2,12 @@
   color: $black;
 
   &__container {
-    padding: 0 10px 10px;
+    padding: 0 10px 0px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @include tablet {
-      margin-top: 30px;
-    }
-
-    @include phone {
-      margin-top: 10px;
-    }
   }
 
   &__title {
@@ -131,13 +123,7 @@
     z-index: 5;
 
     @include tablet {
-      bottom: 0;
       left: 4%;
-    }
-
-    @include small-phone {
-      bottom: -12px;
-      left: 0;
     }
   }
 }
